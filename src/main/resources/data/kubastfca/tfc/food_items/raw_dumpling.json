@@ -1,0 +1,7 @@
+{
+  "ingredient": {
+    "item": "kubastfca:raw_dumpling"
+  },"type": "dynamic",
+  "decay_modifier":15,
+  "heat_capacity": 1
+}

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pemmican:item/pemmican"
+    "layer0": "kubastfca:item/dumpling_raw"
   }
 }

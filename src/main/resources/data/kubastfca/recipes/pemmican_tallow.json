@@ -1,0 +1,17 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "tag": "tfc:foods/cooked_meats"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "tfc:tallow",
+    "amount": 50
+  },
+  "output_item": {
+    "item": "kubastfca:pemmican",
+    "count": 2
+  },
+  "duration": 200
+}

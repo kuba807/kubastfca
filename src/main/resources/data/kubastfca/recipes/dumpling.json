@@ -1,0 +1,18 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "item": "kubastfca:raw_dumpling"
+    }
+  },
+  "result_item": {
+    "stack": {
+      "item": "kubastfca:dumpling"
+    },
+    "modifiers": [
+      "tfc:copy_food"
+    ]
+  },
+  "temperature": 200
+}

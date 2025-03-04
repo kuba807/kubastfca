@@ -1,0 +1,24 @@
+{
+  "type": "tfc:damage_inputs_shapeless_crafting",
+
+  "recipe": {
+  "category": "misc",
+    "type": "minecraft:crafting_shapeless",
+  "group": "kubastfca",
+  "ingredients": [
+    {
+      "tag": "tfc:knives"
+    },
+    {
+      "tag": "kubastfca:wildmeats"
+    },
+    {
+      "tag": "kubastfca:berrys"
+    }
+  ],
+  "result": {
+    "item": "kubastfca:pemmican",
+    "count": 1
+  }
+}
+}
