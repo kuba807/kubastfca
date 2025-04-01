@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+<<<<<<< Updated upstream
     "kubastfca:raw_dumpling"
+=======
+    "kubastfca:dumpling",
+    "kubastfca:pasta"
+>>>>>>> Stashed changes
   ]
 }

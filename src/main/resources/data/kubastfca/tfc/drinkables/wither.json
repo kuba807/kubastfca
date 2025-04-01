@@ -1,0 +1,12 @@
+{
+  "ingredient": ["kubastfca:tea_goldenrod_fluid","kubastfca:tea_dandelion_fluid"],
+
+  "thirst": 10,
+  "effects": [
+    {
+      "type": "minecraft:regeneration",
+      "duration": 300
+    }
+  ],
+  "may_drink_when_full": true
+}

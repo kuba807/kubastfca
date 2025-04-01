@@ -1,7 +1,13 @@
-
 {
   "item.kubastfca.pemmican": "pemikan",
+<<<<<<< Updated upstream
   "item.kubastfca.raw_dumpling":"surowy pieróg",
   "item.kubastfca.dumpling":"pieróg"
 
+=======
+  "item.kubastfca.dumpling": "pieróg",
+  "item.kubastfca.pasta": "makaron",
+  "item.kubastfca.raw_pasta": "surowy pasta",
+  "item.kubastfca.tea_bucket": "wiadro herbady"
+>>>>>>> Stashed changes
 }

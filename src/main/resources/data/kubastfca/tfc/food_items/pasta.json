@@ -1,0 +1,10 @@
+{
+  "ingredient": {
+    "item": "kubastfca:pasta"
+  },
+  "hunger":4,
+  "decay_modifier":2.5,
+  "saturation":5,
+  "grain": 0.5
+
+}

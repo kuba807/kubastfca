@@ -1,0 +1,11 @@
+{
+  "ingredient": "kubastfca:tea_lilac_fluid",
+  "thirst": 10,
+  "effects": [
+    {
+      "type": "minecraft:water_breathing",
+      "duration": 300
+    }
+  ],
+  "may_drink_when_full": true
+}

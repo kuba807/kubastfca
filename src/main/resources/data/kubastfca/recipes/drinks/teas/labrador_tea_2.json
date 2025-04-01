@@ -1,0 +1,21 @@
+{
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "tfc:plant/labrador_tea"
+    },
+    {
+      "item": "tfc:plant/labrador_tea"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 400
+  },
+  "duration": 2000,
+  "temperature": 600,
+  "fluid_output": {
+    "fluid": "kubastfca:tea_labrador_tea_fluid",
+    "amount": 400
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "ingredient": "kubastfca:tea_blood_lily_fluid",
+  "thirst": 10,
+  "effects": [
+    {
+      "type": "minecraft:wither",
+      "duration": 300
+    }
+  ],
+  "may_drink_when_full": true
+}

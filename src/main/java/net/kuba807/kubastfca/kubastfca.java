@@ -1,9 +1,16 @@
 package net.kuba807.kubastfca;
 
+import net.kuba807.kubastfca.fluid.ModFluidTypes;
+import net.kuba807.kubastfca.fluid.BaseFluidType;
+import net.kuba807.kubastfca.fluid.ModFluids;
 import com.mojang.logging.LogUtils;
 import net.kuba807.kubastfca.item.ModItems;
 import net.kuba807.kubastfca.item.Foods;
+import net.kuba807.kubastfca.block.ModBlocks;
 import net.minecraft.client.Minecraft;
+
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
@@ -45,7 +52,11 @@ public class kubastfca
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
+        //fluid
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
 
 
         // Register the commonSetup method for modloading
@@ -63,8 +74,17 @@ public class kubastfca
     }
     private void addCreative(BuildCreativeModeTabContentsEvent event){
         if (event.getTabKey()== CreativeModeTabs.FOOD_AND_DRINKS){
+<<<<<<< Updated upstream
             event.accept(ModItems.PEMMICAN);}
             event.accept(ModItems.RAW_DUMPLING);}
+=======
+            event.accept(ModItems.PEMMICAN);
+            event.accept(ModItems.DUMPLING);
+            event.accept(ModItems.COOKED_DUMPLING);
+            event.accept(ModItems.RAW_PASTA);
+            event.accept(ModItems.PASTA);}
+}
+>>>>>>> Stashed changes
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
@@ -81,6 +101,8 @@ public class kubastfca
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_TEA_goldenrod.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_TEA_goldenrod.get(), RenderType.translucent());
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());

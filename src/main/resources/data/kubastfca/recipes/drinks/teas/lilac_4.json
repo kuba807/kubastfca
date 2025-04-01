@@ -1,0 +1,30 @@
+{
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "tfc:plant/lilac"
+    },
+    {
+      "item": "tfc:plant/lilac"
+    },
+    {
+      "item": "tfc:plant/lilac"
+    },
+    {
+      "item": "tfc:plant/lilac"
+    },
+    {
+      "item": "tfc:plant/lilac"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 800
+  },
+  "duration": 2000,
+  "temperature": 600,
+  "fluid_output": {
+    "fluid": "kubastfca:tea_lilac_fluid",
+    "amount": 800
+  }
+}

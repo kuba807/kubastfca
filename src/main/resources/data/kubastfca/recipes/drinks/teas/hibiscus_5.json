@@ -1,0 +1,30 @@
+{
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "tfc:plant/hibiscus"
+    },
+    {
+      "item": "tfc:plant/hibiscus"
+    },
+    {
+      "item": "tfc:plant/hibiscus"
+    },
+    {
+      "item": "tfc:plant/hibiscus"
+    },
+    {
+      "item": "tfc:plant/hibiscus"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "duration": 2000,
+  "temperature": 600,
+  "fluid_output": {
+    "fluid": "kubastfca:tea_hibiscus_fluid",
+    "amount": 1000
+  }
+}

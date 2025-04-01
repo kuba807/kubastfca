@@ -1,0 +1,27 @@
+{
+  "type": "tfc:pot",
+  "ingredients": [
+
+    {
+      "item": "kubastfca:raw_pasta"
+    },
+    {
+      "item": "kubastfca:raw_pasta"
+    }
+    ],
+  "fluid_ingredient": {
+    "ingredient": "tfc:salt_water",
+    "amount": 100
+  },
+  "duration": 1000,
+  "temperature": 300,
+  "item_output": [
+
+    {
+      "item": "kubastfca:pasta"
+    },
+    {
+      "item": "kubastfca:pasta"
+    }
+  ]
+}

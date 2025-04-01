@@ -1,5 +1,28 @@
 {
   "item.kubastfca.pemmican": "pemmican",
+<<<<<<< Updated upstream
   "item.kubastfca.raw_dumpling":"raw dumpling",
   "item.kubastfca.dumpling":"dumpling"
+=======
+  "item.kubastfca.dumpling":"dumpling",
+  "item.kubastfca.cooked_dumpling":"cooked dumpling",
+  "item.kubastfca.pasta": "pasta",
+  "item.kubastfca.raw_pasta": "raw pasta",
+  "fluid_type.kubastfca.golden_rod": "golden rod tea",
+  "block.kubastfca.fluid.golden_rod": "golden rod tea",
+  "fluid_type.kubastfca.blood_lily": "blood lily tea",
+  "block.kubastfca.fluid.blood_lily": "blood lily tea",
+  "fluid_type.kubastfca.dandelion": "dandelion tea",
+  "block.kubastfca.fluid.dandelion": "dandelion tea",
+  "fluid_type.kubastfca.lilac": "lilac tea",
+  "block.kubastfca.fluid.lilac": "lilac tea",
+  "fluid_type.kubastfca.snapdragon": "snapdragon tea",
+  "block.kubastfca.fluid.snapdragon": "snapdragon tea",
+  "fluid_type.kubastfca.hibiscus": "hibiscus tea",
+  "block.kubastfca.fluid.hibiscus": "hibiscus tea",
+  "fluid_type.kubastfca.labrador_tea": "labrador tea tea",
+  "block.kubastfca.fluid.labrador_tea": "labrador tea tea",
+  "fluid_type.kubastfca.sacred_datura": "sacred datura tea",
+  "block.kubastfca.fluid.sacred_datura": "sacred datura tea"
+>>>>>>> Stashed changes
 }

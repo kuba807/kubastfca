@@ -1,0 +1,6 @@
+{
+  "ingredient": ["kubastfca:tea_snapdragon_fluid","kubastfca:tea_snapdragon_fluid"],
+
+  "thirst": 5,
+  "may_drink_when_full": true
+}

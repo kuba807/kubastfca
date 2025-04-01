@@ -1,0 +1,17 @@
+{
+  "ingredient": "kubastfca:tea_sacred_datura_fluid",
+  "thirst": 10,
+  "effects": [
+    {
+      "type": "tfc:pinned",
+      "duration": 300
+    },
+    {
+      "type": "minecraft:nausea",
+      "duration": 1200
+    }
+
+  ],
+  "intoxication": 40000,
+  "may_drink_when_full": true
+}

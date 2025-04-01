@@ -1,0 +1,11 @@
+{
+  "ingredient": "kubastfca:tea_labrador_tea_fluid",
+  "thirst": 10,
+  "effects": [
+    {
+      "type": "minecraft:haste",
+      "duration": 300
+    }
+  ],
+  "may_drink_when_full": true
+}

@@ -1,0 +1,11 @@
+{
+  "ingredient": "kubastfca:tea_hibiscus_fluid",
+  "thirst": 10,
+  "effects": [
+    {
+      "type": "minecraft:speed",
+      "duration": 300
+    }
+  ],
+  "may_drink_when_full": true
+}
