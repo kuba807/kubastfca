@@ -74,17 +74,13 @@ public class kubastfca
     }
     private void addCreative(BuildCreativeModeTabContentsEvent event){
         if (event.getTabKey()== CreativeModeTabs.FOOD_AND_DRINKS){
-<<<<<<< Updated upstream
-            event.accept(ModItems.PEMMICAN);}
-            event.accept(ModItems.RAW_DUMPLING);}
-=======
+
             event.accept(ModItems.PEMMICAN);
             event.accept(ModItems.DUMPLING);
             event.accept(ModItems.COOKED_DUMPLING);
             event.accept(ModItems.RAW_PASTA);
             event.accept(ModItems.PASTA);}
 }
->>>>>>> Stashed changes
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent

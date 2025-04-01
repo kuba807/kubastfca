@@ -1,9 +1,5 @@
 {
   "item.kubastfca.pemmican": "pemmican",
-<<<<<<< Updated upstream
-  "item.kubastfca.raw_dumpling":"raw dumpling",
-  "item.kubastfca.dumpling":"dumpling"
-=======
   "item.kubastfca.dumpling":"dumpling",
   "item.kubastfca.cooked_dumpling":"cooked dumpling",
   "item.kubastfca.pasta": "pasta",
@@ -24,5 +20,4 @@
   "block.kubastfca.fluid.labrador_tea": "labrador tea tea",
   "fluid_type.kubastfca.sacred_datura": "sacred datura tea",
   "block.kubastfca.fluid.sacred_datura": "sacred datura tea"
->>>>>>> Stashed changes
 }
