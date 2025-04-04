@@ -1,16 +1,30 @@
 package net.kuba807.kubastfca.item;
 
+import net.dries007.tfc.common.items.JarItem;
+import net.dries007.tfc.common.items.TFCItems;
 import net.kuba807.kubastfca.fluid.ModFluids;
 import net.kuba807.kubastfca.item.Foods;
 import net.kuba807.kubastfca.kubastfca;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Item.Properties;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.MobBucketItem;
+import net.minecraft.world.item.SignItem;
+import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+
+
+import net.dries007.tfc.common.items.*;
+import net.dries007.tfc.util.Helpers;
+import static net.dries007.tfc.TerraFirmaCraft.*;
 
 public class ModItems {
 
@@ -19,6 +33,16 @@ public class ModItems {
     //pemmican
     public  static final RegistryObject<Item> PEMMICAN = ITEMS.register("pemmican",
             () -> new Item(new Item.Properties().food(Foods.PEMMICAN)));
+    //weki
+
+
+
+    public  static final RegistryObject<Item> MEAT_WEK= ITEMS.register("jar/meat_wek",
+            () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
+
+    public  static final RegistryObject<Item> MEAT_WEK_UNSEALED = ITEMS.register("jar/meat_wek_unsealed",
+            () -> new Item(new Item.Properties().food(Foods.DEFAULT).craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
+
     //pierogi
     public  static final RegistryObject<Item> RAW_DUMPLING = ITEMS.register("raw_dumpling",
             () -> new Item(new Item.Properties().food(Foods.DEFAULT)));

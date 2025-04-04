@@ -1,0 +1,31 @@
+{
+  "type": "tfc:pot_jam",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/meats"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "tag": "tfc:foods/meats"
+      }
+    },
+    {
+      "item": "tfc:powder/salt"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "tfc:tallow",
+    "amount": 100
+  },
+  "duration": 500,
+  "temperature": 300,
+  "result": {
+      "item": "kubastfca:jar/meat_wek",
+      "count": 2
+  },
+  "texture": "tfc:block/jar/banana"
+}

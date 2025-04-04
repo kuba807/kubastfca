@@ -1,5 +1,4 @@
 {
-
   "type": "tfc:damage_inputs_shaped_crafting",
   "recipe": {
     "type": "tfc:advanced_shaped_crafting",
@@ -27,7 +26,7 @@
     },
     "result": {
       "stack": {
-        "item": "kubastfca:raw_dumpling",
+        "item": "kubastfca:dumpling",
         "count": 2
       },
       "modifiers": [

@@ -78,7 +78,9 @@ public class kubastfca
             event.accept(ModItems.DUMPLING);
             event.accept(ModItems.COOKED_DUMPLING);
             event.accept(ModItems.RAW_PASTA);
-            event.accept(ModItems.PASTA);}
+            event.accept(ModItems.PASTA);
+            event.accept(ModItems.MEAT_WEK);
+            event.accept(ModItems.MEAT_WEK_UNSEALED);}
 }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

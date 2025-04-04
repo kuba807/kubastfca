@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "kubastfca:dumpling",
-    "kubastfca:pasta"
+    "kubastfca:pasta",
+    "tfc:powder/garnierite"
   ]
 }
