@@ -1,0 +1,9 @@
+{
+  "ingredient": {
+    "item": "kubastfca:jar/mix_wek_unsealed"
+  },
+  "saturation":2.5,
+  "decay_modifier":5,
+  "protein":0.7,
+  "vegetables": 0.5
+}
