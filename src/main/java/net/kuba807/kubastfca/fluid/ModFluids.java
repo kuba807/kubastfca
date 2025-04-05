@@ -56,6 +56,10 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_TEA_SACRED_DATURA= FLUIDS.register("flowing_sacred_datura_tea",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.SACRED_DATURA_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_TEA_POPPY =FLUIDS.register("tea_poppy_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.POPPY_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_TEA_POPPY= FLUIDS.register("flowing_poppy_tea",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.POPPY_PROPERTIES));
 
 
 
@@ -108,6 +112,11 @@ public class ModFluids {
             ModFluidTypes.SACRED_DATURA, SOURCE_TEA_SACRED_DATURA, FLOWING_TEA_SACRED_DATURA)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_SACRED_DATURA_BLOCK)
             .bucket(ModItems.TEA_SACRED_DATURA_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties POPPY_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.POPPY, SOURCE_TEA_POPPY, FLOWING_TEA_POPPY)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_POPPY_BLOCK)
+            .bucket(ModItems.TEA_POPPY_BUCKET);
 
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);

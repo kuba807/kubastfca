@@ -1,0 +1,17 @@
+{
+  "ingredient": "kubastfca:tea_poppy_fluid",
+  "thirst": 10,
+  "effects": [
+    {
+      "type": "minecraft:resistance",
+      "duration": 800
+    },
+    {
+      "type": "minecraft:instant_damage",
+      "duration": 1
+    }
+
+  ],
+  "intoxication": 4000,
+  "may_drink_when_full": true
+}

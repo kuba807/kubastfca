@@ -53,6 +53,9 @@ public class ModBlocks {
     public static final RegistryObject<LiquidBlock> TEA_SACRED_DATURA_BLOCK = BLOCKS.register("tea_sacred_datura_block",
             () -> new LiquidBlock(ModFluids.SOURCE_TEA_SACRED_DATURA ,BlockBehaviour.Properties.copy(Blocks.WATER)));
 
+    public static final RegistryObject<LiquidBlock> TEA_POPPY_BLOCK = BLOCKS.register("tea_poppy_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_TEA_POPPY ,BlockBehaviour.Properties.copy(Blocks.WATER)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

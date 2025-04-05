@@ -1,0 +1,21 @@
+{
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "tfc:plant/poppy"
+    },
+    {
+      "item": "tfc:plant/poppy"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 400
+  },
+  "duration": 2000,
+  "temperature": 600,
+  "fluid_output": {
+    "fluid": "kubastfca:tea_poppy_fluid",
+    "amount": 400
+  }
+}

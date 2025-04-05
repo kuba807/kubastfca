@@ -3,7 +3,7 @@
   "duration": 300,
   "fluid_ingredient": {
     "amount": 100,
-    "fluid": "tfc:tallow"
+    "fluid": "minecraft:water"
   },
   "ingredients": [
     {

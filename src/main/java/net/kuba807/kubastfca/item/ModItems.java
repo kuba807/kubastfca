@@ -1,30 +1,15 @@
 package net.kuba807.kubastfca.item;
 
-import net.dries007.tfc.common.items.JarItem;
 import net.dries007.tfc.common.items.TFCItems;
 import net.kuba807.kubastfca.fluid.ModFluids;
-import net.kuba807.kubastfca.item.Foods;
 import net.kuba807.kubastfca.kubastfca;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Item.Properties;
-import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.MobBucketItem;
-import net.minecraft.world.item.SignItem;
-import net.minecraft.world.item.StandingAndWallBlockItem;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-
-
-import net.dries007.tfc.common.items.*;
-import net.dries007.tfc.util.Helpers;
-import static net.dries007.tfc.TerraFirmaCraft.*;
 
 public class ModItems {
 
@@ -38,10 +23,20 @@ public class ModItems {
 
 
     public  static final RegistryObject<Item> MEAT_WEK= ITEMS.register("jar/meat_wek",
-            () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
-
+            () -> new Item(new Item.Properties()));
     public  static final RegistryObject<Item> MEAT_WEK_UNSEALED = ITEMS.register("jar/meat_wek_unsealed",
-            () -> new Item(new Item.Properties().food(Foods.DEFAULT).craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
+            () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
+
+    public  static final RegistryObject<Item> VEGGIE_WEK= ITEMS.register("jar/veggie_wek",
+            () -> new Item(new Item.Properties()));
+    public  static final RegistryObject<Item> VEGGIE_WEK_UNSEALED = ITEMS.register("jar/veggie_wek_unsealed",
+            () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
+
+    public  static final RegistryObject<Item> MIX_WEK= ITEMS.register("jar/mix_wek",
+            () -> new Item(new Item.Properties()));
+    public  static final RegistryObject<Item> MIX_WEK_UNSEALED = ITEMS.register("jar/mix_wek_unsealed",
+            () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
+
 
     //pierogi
     public  static final RegistryObject<Item> RAW_DUMPLING = ITEMS.register("raw_dumpling",
@@ -86,5 +81,8 @@ public class ModItems {
 
     public  static final RegistryObject<Item> TEA_SACRED_DATURA_BUCKET = ITEMS.register("tea_sacred_datura_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_SACRED_DATURA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public  static final RegistryObject<Item> TEA_POPPY_BUCKET = ITEMS.register("tea_poppy_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_TEA_POPPY, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
 }

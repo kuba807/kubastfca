@@ -80,7 +80,13 @@ public class kubastfca
             event.accept(ModItems.RAW_PASTA);
             event.accept(ModItems.PASTA);
             event.accept(ModItems.MEAT_WEK);
-            event.accept(ModItems.MEAT_WEK_UNSEALED);}
+            event.accept(ModItems.MEAT_WEK_UNSEALED);
+            event.accept(ModItems.VEGGIE_WEK);
+            event.accept(ModItems.VEGGIE_WEK_UNSEALED);
+            event.accept(ModItems.MIX_WEK);
+            event.accept(ModItems.MIX_WEK_UNSEALED);
+
+        }
 }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

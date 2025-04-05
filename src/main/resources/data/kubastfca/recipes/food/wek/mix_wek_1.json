@@ -4,7 +4,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "tag": "tfc:foods/meats"
+        "tag": "tfc:foods/vegetables"
       }
     },
     {
@@ -18,14 +18,14 @@
     }
   ],
   "fluid_ingredient": {
-    "ingredient": "tfc:tallow",
+    "ingredient": {"tag": "kubastfca:oil"},
     "amount": 100
   },
   "duration": 500,
   "temperature": 300,
   "result": {
-      "item": "kubastfca:jar/meat_wek",
+      "item": "kubastfca:jar/mix_wek",
       "count": 2
   },
-  "texture": "tfc:block/jar/banana"
+  "texture": "tfc:block/jar/pumpkin"
 }

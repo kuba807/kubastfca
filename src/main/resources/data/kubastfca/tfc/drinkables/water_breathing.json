@@ -4,7 +4,7 @@
   "effects": [
     {
       "type": "minecraft:water_breathing",
-      "duration": 300
+      "duration": 500
     }
   ],
   "may_drink_when_full": true

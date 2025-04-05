@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "kubastfca:jar/veggie_wek"
+      }
+    }
+  ],
+  "result": {
+    "item": "kubastfca:jar/veggie_wek_unsealed"
+  }
+}

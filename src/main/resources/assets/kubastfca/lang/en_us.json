@@ -20,5 +20,12 @@
   "block.kubastfca.fluid.labrador_tea": "labrador tea tea",
   "fluid_type.kubastfca.sacred_datura": "sacred datura tea",
   "block.kubastfca.fluid.sacred_datura": "sacred datura tea",
-  "item.kubastfca.meat_wek": "wek"
+  "fluid_type.kubastfca.poppy": "poppy tea",
+  "block.kubastfca.fluid.poppy": "poppy tea",
+  "item.kubastfca.jar.meat_wek": "canned meat",
+  "item.kubastfca.jar.meat_wek_unsealed": "canned meat",
+  "item.kubastfca.jar.veggie_wek": "canned veggies",
+  "item.kubastfca.jar.veggie_wek_unsealed": "canned veggies",
+  "item.kubastfca.jar.mix_wek": "canned stew",
+  "item.kubastfca.jar.mix_wek_unsealed": "canned stew"
 }

@@ -2,7 +2,6 @@
   "ingredient": {
     "item": "kubastfca:jar/meat_wek_unsealed"
   },
-  "hunger":4,
   "saturation":2.5,
   "decay_modifier":5,
   "protein":2.5
