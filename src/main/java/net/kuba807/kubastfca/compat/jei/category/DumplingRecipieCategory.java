@@ -34,9 +34,9 @@ public class DumplingRecipieCategory extends PotRecipeCategory<PotRecipe> {
                 ingredientCount++;
         }
         final int servings = (int) ingredientCount;
-
+        
         IRecipeSlotBuilder outputItem = builder.addSlot(RecipeIngredientRole.OUTPUT, 126, 6);
-        outputItem.addItemStack(recipe.getResultItem(registryAccess()));
+        outputItem.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
         outputItem.setBackground(slot, -1, -1);
     }
 
