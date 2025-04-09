@@ -1,0 +1,23 @@
+{
+  "type": "kubastfca:dumpling",
+  "ingredients": [
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "kubastfca:dumpling"
+      }
+    },
+    {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "kubastfca:dumpling"
+      }
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "tfc:salt_water",
+    "amount": 100
+  },
+  "duration": 600,
+  "temperature": 300
+}

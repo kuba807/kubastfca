@@ -7,7 +7,11 @@ import com.mojang.logging.LogUtils;
 import net.kuba807.kubastfca.item.ModItems;
 import net.kuba807.kubastfca.item.Foods;
 import net.kuba807.kubastfca.block.ModBlocks;
+import net.kuba807.kubastfca.recipes.DumplingRecipe;
+import net.kuba807.kubastfca.recipes.KUBARecipeSerializers;
+
 import net.minecraft.client.Minecraft;
+
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -38,6 +42,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
+import static net.kuba807.kubastfca.recipes.KUBARecipeSerializers.RECIPE_SERIALIZERS;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(kubastfca.MODID)
 public class kubastfca
@@ -63,6 +69,8 @@ public class kubastfca
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+
+        KUBARecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

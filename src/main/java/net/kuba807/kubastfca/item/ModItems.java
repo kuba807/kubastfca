@@ -23,26 +23,24 @@ public class ModItems {
 
 
     public  static final RegistryObject<Item> MEAT_WEK= ITEMS.register("jar/meat_wek",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem())));
     public  static final RegistryObject<Item> MEAT_WEK_UNSEALED = ITEMS.register("jar/meat_wek_unsealed",
             () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
 
     public  static final RegistryObject<Item> VEGGIE_WEK= ITEMS.register("jar/veggie_wek",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem())));
     public  static final RegistryObject<Item> VEGGIE_WEK_UNSEALED = ITEMS.register("jar/veggie_wek_unsealed",
             () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
 
     public  static final RegistryObject<Item> MIX_WEK= ITEMS.register("jar/mix_wek",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem())));
     public  static final RegistryObject<Item> MIX_WEK_UNSEALED = ITEMS.register("jar/mix_wek_unsealed",
             () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
 
 
     //pierogi
-    public  static final RegistryObject<Item> RAW_DUMPLING = ITEMS.register("raw_dumpling",
-            () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
     public  static final RegistryObject<Item> DUMPLING = ITEMS.register("dumpling",
-            () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
+            () -> new Item(new Item.Properties().food(Foods.RAW)));
 
     public  static final RegistryObject<Item> COOKED_DUMPLING = ITEMS.register("cooked_dumpling",
             () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
@@ -51,7 +49,7 @@ public class ModItems {
     public  static final RegistryObject<Item> PASTA = ITEMS.register("pasta",
             () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
     public  static final RegistryObject<Item> RAW_PASTA = ITEMS.register("raw_pasta",
-            () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
+            () -> new Item(new Item.Properties().food(Foods.RAW)));
     public static void register (IEventBus eventBus){
         ITEMS.register(eventBus);
     }

@@ -36,7 +36,8 @@
             "hunger": 4,
             "water": 0.5,
             "saturation": 1,
-            "decay_modifier": 4.5
+            "decay_modifier": 4.5,
+            "grain": 0.8
           },
           "portions": [
 
