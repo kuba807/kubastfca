@@ -122,16 +122,8 @@ public class DumplingRecipe extends PotRecipe
         @Override
         public InteractionResult onInteract(PotBlockEntity entity, Player player, ItemStack clickedWith)
         {
-            if (Helpers.isItem(clickedWith.getItem(), TFCTags.Items.SOUP_BOWLS) && !stack.isEmpty())
+            if (!stack.isEmpty())
             {
-                // set the internal bowl to the one we clicked with
-                if (FoodCapability.get(stack) instanceof DynamicBowlHandler handler)
-                {
-                    handler.setBowl(clickedWith);
-                }
-
-                // take the player's bowl, give a soup
-                clickedWith.shrink(0);
                 ItemHandlerHelper.giveItemToPlayer(player, stack.split(1));
                 return InteractionResult.SUCCESS;
             }
