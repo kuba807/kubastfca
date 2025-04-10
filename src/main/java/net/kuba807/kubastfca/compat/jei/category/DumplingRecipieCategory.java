@@ -37,29 +37,29 @@ public class DumplingRecipieCategory extends PotRecipeCategory<PotRecipe> {
         for(int i=0 ; i<ingredientCount ;i++){
 
             switch (i) {
-                case 1 :
+                case 0 :
                     IRecipeSlotBuilder outputItem = builder.addSlot(RecipeIngredientRole.OUTPUT, 126, 6);
                     outputItem.setBackground(slot, -1, -1);
                     outputItem.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
                     break;
 
-                case 2:
+                case 1:
                     IRecipeSlotBuilder outputItem2 = builder.addSlot(RecipeIngredientRole.OUTPUT, 146, 6);
                     outputItem2.setBackground(slot, -1, -1);
                     outputItem2.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
                     break;
 
-                case 3:
+                case 2:
                     IRecipeSlotBuilder outputItem3 = builder.addSlot(RecipeIngredientRole.OUTPUT, 166, 6);
                     outputItem3.setBackground(slot, -1, -1);
                     outputItem3.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
                     break;
-                case 4:
+                case 3:
                     IRecipeSlotBuilder outputItem4 = builder.addSlot(RecipeIngredientRole.OUTPUT, 186, 6);
                     outputItem4.setBackground(slot, -1, -1);
                     outputItem4.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
                     break;
-                case 5:
+                case 4:
                     IRecipeSlotBuilder outputItem5 = builder.addSlot(RecipeIngredientRole.OUTPUT, 206, 6);
                     outputItem5.setBackground(slot, -1, -1);
                     outputItem5.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
