@@ -1,8 +1,8 @@
 package net.kuba807.kubastfca.item;
-
+import net.minecraft.resources.ResourceLocation;
+import net.dries007.tfc.common.items.JarItem;
 import net.dries007.tfc.common.items.TFCItems;
 import net.kuba807.kubastfca.fluid.ModFluids;
-import net.kuba807.kubastfca.kubastfca;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -11,10 +11,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import static net.dries007.tfc.util.Helpers.identifier;
+import static net.kuba807.kubastfca.kubastfca.MODID;
+
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, kubastfca.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     //pemmican
     public  static final RegistryObject<Item> PEMMICAN = ITEMS.register("pemmican",
             () -> new Item(new Item.Properties().food(Foods.PEMMICAN)));
@@ -23,19 +26,19 @@ public class ModItems {
 
 
     public  static final RegistryObject<Item> MEAT_WEK= ITEMS.register("jar/meat_wek",
-            () -> new Item(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem())));
+            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem()), "peach", false));
     public  static final RegistryObject<Item> MEAT_WEK_UNSEALED = ITEMS.register("jar/meat_wek_unsealed",
-            () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
+            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem()), "peach_unsealed", true));
 
     public  static final RegistryObject<Item> VEGGIE_WEK= ITEMS.register("jar/veggie_wek",
-            () -> new Item(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem())));
+            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem()), "olive", false));
     public  static final RegistryObject<Item> VEGGIE_WEK_UNSEALED = ITEMS.register("jar/veggie_wek_unsealed",
-            () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
+            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem()), "olive_unsealed", true));
 
     public  static final RegistryObject<Item> MIX_WEK= ITEMS.register("jar/mix_wek",
-            () -> new Item(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem())));
+            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem()), "pumpkin_chunks", false));
     public  static final RegistryObject<Item> MIX_WEK_UNSEALED = ITEMS.register("jar/mix_wek_unsealed",
-            () -> new Item(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem())));
+            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem()), "pumpkin_chunks_unsealed", true));
 
 
     //pierogi
@@ -54,7 +57,7 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-    //wiadra herbaty, nie pytaj sam niewiem co się tu dzieje, błagam pomóż, siedze tu już kturąś godzine, jutro mam sprawdzian, a jest późno, proszę pomóż.
+    //wiadra herbaty, nie pytaj sam niewiem co się tu dzieje, błagam pomóż, siedze tu już kturąś godzine, a jest późno, proszę pomóż.
 
     public  static final RegistryObject<Item> tea_goldenrod_bucket = ITEMS.register("tea_goldenrod_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_goldenrod, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));

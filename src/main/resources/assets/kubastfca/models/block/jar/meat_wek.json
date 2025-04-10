@@ -1,6 +1,6 @@
 {
-  "parent": "tfc:block/jar",
+  "parent": "kubastfca:block/jar",
   "textures": {
-    "1": "tfc:block/jar/banana"
+    "1": "kubastfca:block/jar/banana"
   }
 }

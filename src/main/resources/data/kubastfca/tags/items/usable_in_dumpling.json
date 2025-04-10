@@ -5,6 +5,7 @@
     "#tfc:foods/vegetables",
     "#tfc:foods/meats",
     "#tfc:foods/cooked_meats",
-    "tfc:food/cooked_rice"
+    "tfc:food/cooked_rice",
+    "#tfc:foods/dairy"
   ]
 }

@@ -2,6 +2,6 @@
   "ingredient": {
     "item": "kubastfca:dumpling"
   },"type": "dynamic",
-  "decay_modifier":4,
+  "decay_modifier":3.5,
   "grain": 0.6
 }

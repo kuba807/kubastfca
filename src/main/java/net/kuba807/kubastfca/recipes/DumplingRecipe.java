@@ -133,7 +133,7 @@ public class DumplingRecipe extends PotRecipe
         @Override
         public int getFluidColor()
         {
-            return TFCFluids.ALPHA_MASK | 0xF64214;
+            return TFCFluids.ALPHA_MASK | 0x124214;
         }
 
         @Override
