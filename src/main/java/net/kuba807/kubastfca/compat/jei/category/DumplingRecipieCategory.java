@@ -19,7 +19,7 @@ import net.dries007.tfc.common.recipes.PotRecipe;
 public class DumplingRecipieCategory extends PotRecipeCategory<PotRecipe> {
     public DumplingRecipieCategory(RecipeType<PotRecipe> type, IGuiHelper helper)
     {
-        super(type, helper, helper.createBlankDrawable(175, 50));
+        super(type, helper, helper.createBlankDrawable(175, 70));
     }
 
     @Override
@@ -33,7 +33,6 @@ public class DumplingRecipieCategory extends PotRecipeCategory<PotRecipe> {
             if (!ingredient.isEmpty())
                 ingredientCount++;
         }
-        final int servings = (int) ingredientCount;
         for(int i=0 ; i<ingredientCount ;i++){
 
             switch (i) {
@@ -50,17 +49,17 @@ public class DumplingRecipieCategory extends PotRecipeCategory<PotRecipe> {
                     break;
 
                 case 2:
-                    IRecipeSlotBuilder outputItem3 = builder.addSlot(RecipeIngredientRole.OUTPUT, 166, 6);
+                    IRecipeSlotBuilder outputItem3 = builder.addSlot(RecipeIngredientRole.OUTPUT, 126, 26);
                     outputItem3.setBackground(slot, -1, -1);
                     outputItem3.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
                     break;
                 case 3:
-                    IRecipeSlotBuilder outputItem4 = builder.addSlot(RecipeIngredientRole.OUTPUT, 186, 6);
+                    IRecipeSlotBuilder outputItem4 = builder.addSlot(RecipeIngredientRole.OUTPUT, 146, 26);
                     outputItem4.setBackground(slot, -1, -1);
                     outputItem4.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
                     break;
                 case 4:
-                    IRecipeSlotBuilder outputItem5 = builder.addSlot(RecipeIngredientRole.OUTPUT, 206, 6);
+                    IRecipeSlotBuilder outputItem5 = builder.addSlot(RecipeIngredientRole.OUTPUT, 136, 46);
                     outputItem5.setBackground(slot, -1, -1);
                     outputItem5.addItemStack(ModItems.COOKED_DUMPLING.get().getDefaultInstance());
                     break;
