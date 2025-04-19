@@ -26,19 +26,19 @@ public class ModItems {
 
 
     public  static final RegistryObject<Item> MEAT_WEK= ITEMS.register("jar/meat_wek",
-            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem()), "peach", false));
+            () -> new JarItem(new Item.Properties(), "peach", false));
     public  static final RegistryObject<Item> MEAT_WEK_UNSEALED = ITEMS.register("jar/meat_wek_unsealed",
-            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem()), "peach_unsealed", true));
+            () -> new JarItem(new Item.Properties(), "peach_unsealed", true));
 
     public  static final RegistryObject<Item> VEGGIE_WEK= ITEMS.register("jar/veggie_wek",
-            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem()), "olive", false));
+            () -> new JarItem(new Item.Properties(), "olive", false));
     public  static final RegistryObject<Item> VEGGIE_WEK_UNSEALED = ITEMS.register("jar/veggie_wek_unsealed",
-            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem()), "olive_unsealed", true));
+            () -> new JarItem(new Item.Properties(), "olive_unsealed", true));
 
     public  static final RegistryObject<Item> MIX_WEK= ITEMS.register("jar/mix_wek",
-            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.JAR_LID.get().asItem()), "pumpkin_chunks", false));
+            () -> new JarItem(new Item.Properties(), "pumpkin_chunks", false));
     public  static final RegistryObject<Item> MIX_WEK_UNSEALED = ITEMS.register("jar/mix_wek_unsealed",
-            () -> new JarItem(new Item.Properties().craftRemainder(TFCItems.EMPTY_JAR.get().asItem()), "pumpkin_chunks_unsealed", true));
+            () -> new JarItem(new Item.Properties(), "pumpkin_chunks_unsealed", true));
 
 
     //pierogi

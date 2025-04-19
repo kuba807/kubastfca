@@ -1,0 +1,21 @@
+
+{
+  "type": "tfc:extra_products_shapeless_crafting",
+  "extra_products": [{
+    "item": "tfc:jar_lid"
+  }],
+  "recipe": {
+    "type": "tfc:damage_inputs_shapeless_crafting",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [{
+        "item": "kubastfca:jar/veggie_wek"
+      }, {
+        "tag": "tfc:knives"
+      }],
+      "result": {
+        "item": "kubastfca:jar/veggie_wek_unsealed"
+      }
+    }
+  }
+}
