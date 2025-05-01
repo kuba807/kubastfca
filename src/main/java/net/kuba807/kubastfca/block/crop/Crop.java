@@ -46,9 +46,9 @@ public enum Crop implements StringRepresentable
     private final Supplier<Block> deadFactory;
     private final Supplier<Block> wildFactory;
 
-    Crop(NutrientType a_primaryNutrient, int a_singleBlockStages)
+    Crop(NutrientType primaryNutrient, int singleBlockStages)
     {
-        this(a_primaryNutrient, self -> KubaDefaultCropBlock.create(crop(), a_singleBlockStages, self), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
+        this(primaryNutrient, self -> KubaDefaultCropBlock.create(crop(), singleBlockStages, self), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
     }
 //
   //  Crop(NutrientType primaryNutrient, int spreadingSingleBlockStages, Supplier<Supplier<? extends Block>> fruit)
