@@ -1,5 +1,6 @@
 package net.kuba807.kubastfca;
 
+import net.kuba807.kubastfca.block.crop.Crop;
 import net.kuba807.kubastfca.fluid.ModFluidTypes;
 import net.kuba807.kubastfca.fluid.BaseFluidType;
 import net.kuba807.kubastfca.fluid.ModFluids;
@@ -114,6 +115,12 @@ public class kubastfca
         {
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_TEA_goldenrod.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_TEA_goldenrod.get(), RenderType.translucent());
+
+            for (Crop crop : Crop.values()) {
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.CROPS.get(crop).get(), RenderType.cutout());
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.DEAD_CROPS.get(crop).get(), RenderType.cutout());
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.WILD_CROPS.get(crop).get(), RenderType.cutout());
+            }
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());

@@ -1,15 +1,24 @@
 package net.kuba807.kubastfca.item;
+
+
+import net.dries007.tfc.util.Helpers;
+import net.kuba807.kubastfca.block.ModBlocks;
+import net.kuba807.kubastfca.block.crop.Crop;
+
 import net.minecraft.resources.ResourceLocation;
 import net.dries007.tfc.common.items.JarItem;
 import net.dries007.tfc.common.items.TFCItems;
 import net.kuba807.kubastfca.fluid.ModFluids;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Map;
 
 import static net.dries007.tfc.util.Helpers.identifier;
 import static net.kuba807.kubastfca.kubastfca.MODID;
@@ -85,5 +94,10 @@ public class ModItems {
 
     public  static final RegistryObject<Item> TEA_POPPY_BUCKET = ITEMS.register("tea_poppy_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_POPPY, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+
+    //rosliny
+    public static final Map<Crop, RegistryObject<Item>> CROP_SEEDS = Helpers.mapOfKeys(Crop.class, crop ->
+            ITEMS.register("seeds/" + crop.getSerializedName(), () -> new ItemNameBlockItem(ModBlocks.CROPS.get(crop).get(), new Item.Properties())));
 
 }
