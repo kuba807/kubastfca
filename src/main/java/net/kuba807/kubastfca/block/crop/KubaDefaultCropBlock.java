@@ -24,7 +24,6 @@ import net.dries007.tfc.util.climate.ClimateRanges;
 
 
 public abstract class KubaDefaultCropBlock extends DefaultCropBlock
-
 {
 public static KubaDefaultCropBlock create(ExtendedProperties properties, int stages, Crop crop) {
     final IntegerProperty property = TFCBlockStateProperties.getAgeProperty(stages - 1);

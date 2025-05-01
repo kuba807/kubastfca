@@ -5,20 +5,23 @@ import net.dries007.tfc.common.blockentities.FarmlandBlockEntity.NutrientType;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.TFCBlocks;
-import net.dries007.tfc.common.blocks.crop.*;
+import net.dries007.tfc.common.blocks.crop.DeadCropBlock;
+import net.dries007.tfc.common.blocks.crop.DefaultCropBlock;
+import net.dries007.tfc.common.blocks.crop.WildCropBlock;
 import net.dries007.tfc.util.climate.ClimateRange;
-import net.kuba807.kubastfca.util.climate.ClimateRanges;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.StringRepresentable;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
+
 import java.util.Locale;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
 
+
+import net.kuba807.kubastfca.util.climate.ClimateRanges;
 public enum Crop implements StringRepresentable
 {
     // drinks
@@ -46,10 +49,7 @@ public enum Crop implements StringRepresentable
     private final Supplier<Block> deadFactory;
     private final Supplier<Block> wildFactory;
 
-    Crop(NutrientType primaryNutrient, int singleBlockStages)
-    {
-        this(primaryNutrient, self -> KubaDefaultCropBlock.create(crop(), singleBlockStages, self), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
-    }
+
 //
   //  Crop(NutrientType primaryNutrient, int spreadingSingleBlockStages, Supplier<Supplier<? extends Block>> fruit)
   //  {
@@ -76,6 +76,11 @@ public enum Crop implements StringRepresentable
    //     );
    // }
 //
+   Crop(NutrientType primaryNutrient, int singleBlockStages)
+   {
+       this(primaryNutrient, self -> KubaDefaultCropBlock.create(crop(), singleBlockStages, self), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
+   }
+
     Crop(NutrientType primaryNutrient, Function<Crop, Block> factory, Function<Crop, Block> deadFactory, Function<Crop, Block> wildFactory)
     {
         this.serializedName = name().toLowerCase(Locale.ROOT);
