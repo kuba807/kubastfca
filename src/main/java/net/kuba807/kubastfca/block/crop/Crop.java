@@ -25,13 +25,13 @@ import net.kuba807.kubastfca.util.climate.ClimateRanges;
 public enum Crop implements StringRepresentable
 {
     // drinks
-    KAWA(NutrientType.NITROGEN, 8); // Default, 8
+    KAWA(NutrientType.NITROGEN, 7); // Default, 8
 
 
-    private static ExtendedProperties doubleCrop()
-    {
-        return dead().blockEntity(TFCBlockEntities.CROP).serverTicks(CropBlockEntity::serverTickBottomPartOnly);
-    }
+ //   private static ExtendedProperties doubleCrop()
+ //   {
+ //       return dead().blockEntity(TFCBlockEntities.CROP).serverTicks(CropBlockEntity::serverTickBottomPartOnly);
+ //   }
 
     private static ExtendedProperties crop()
     {
