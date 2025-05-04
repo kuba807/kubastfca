@@ -1,4 +1,4 @@
-package net.kuba807.kubastfca.fluid;
+package net.kuba807.kubastfca.common.fluid;
 
 import  net.kuba807.kubastfca.kubastfca;
 import net.minecraft.sounds.SoundEvents;

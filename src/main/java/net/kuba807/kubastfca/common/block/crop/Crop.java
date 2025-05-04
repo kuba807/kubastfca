@@ -1,15 +1,12 @@
-package net.kuba807.kubastfca.block.crop;
+package net.kuba807.kubastfca.common.block.crop;
 
 import net.dries007.tfc.common.blockentities.CropBlockEntity;
 import net.dries007.tfc.common.blockentities.FarmlandBlockEntity.NutrientType;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
-import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.crop.DeadCropBlock;
-import net.dries007.tfc.common.blocks.crop.DefaultCropBlock;
 import net.dries007.tfc.common.blocks.crop.WildCropBlock;
 import net.dries007.tfc.util.climate.ClimateRange;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;

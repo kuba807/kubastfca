@@ -1,8 +1,7 @@
-package net.kuba807.kubastfca.compat.jei.category;
+package net.kuba807.kubastfca.common.compat.jei.category;
 
-import net.kuba807.kubastfca.item.ModItems;
+import net.kuba807.kubastfca.common.item.ModItems;
 import net.dries007.tfc.compat.jei.category.PotRecipeCategory;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import net.minecraft.client.gui.GuiGraphics;
@@ -13,7 +12,6 @@ import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
-import net.dries007.tfc.common.items.TFCItems;
 import net.dries007.tfc.common.recipes.PotRecipe;
 
 public class DumplingRecipieCategory extends PotRecipeCategory<PotRecipe> {

@@ -1,13 +1,11 @@
-package net.kuba807.kubastfca.recipes;
+package net.kuba807.kubastfca.common.recipes;
 
-import  net.kuba807.kubastfca.item.ModItems;
-import  net.kuba807.kubastfca.recipes.KUBARecipeSerializers;
+import net.kuba807.kubastfca.common.item.ModItems;
 
 import java.util.ArrayList;
 import java.util.List;
 import com.google.gson.JsonObject;
 import net.dries007.tfc.common.recipes.PotRecipe;
-import net.dries007.tfc.common.recipes.TFCRecipeSerializers;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -20,7 +18,6 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.items.ItemHandlerHelper;
 import org.jetbrains.annotations.Nullable;
 
-import net.dries007.tfc.common.TFCTags;
 import net.dries007.tfc.common.blockentities.PotBlockEntity;
 import net.dries007.tfc.common.capabilities.food.DynamicBowlHandler;
 import net.dries007.tfc.common.capabilities.food.FoodCapability;
@@ -28,13 +25,8 @@ import net.dries007.tfc.common.capabilities.food.FoodData;
 import net.dries007.tfc.common.capabilities.food.IFood;
 import net.dries007.tfc.common.capabilities.food.Nutrient;
 import net.dries007.tfc.common.fluids.TFCFluids;
-import net.dries007.tfc.common.items.TFCItems;
 import net.dries007.tfc.common.recipes.ingredients.FluidStackIngredient;
 import net.dries007.tfc.compat.jade.common.BlockEntityTooltip;
-import net.dries007.tfc.compat.jade.common.BlockEntityTooltips;
-import net.dries007.tfc.util.Helpers;
-
-import static net.kuba807.kubastfca.item.ModItems.COOKED_DUMPLING;
 
 public class DumplingRecipe extends PotRecipe
 {

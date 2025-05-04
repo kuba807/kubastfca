@@ -1,4 +1,4 @@
-package net.kuba807.kubastfca.item;
+package net.kuba807.kubastfca.common.item;
 
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;

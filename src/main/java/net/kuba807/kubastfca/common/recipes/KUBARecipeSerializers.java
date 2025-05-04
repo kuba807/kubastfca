@@ -1,4 +1,4 @@
-package net.kuba807.kubastfca.recipes;
+package net.kuba807.kubastfca.common.recipes;
 
 
 import java.util.function.Supplier;
@@ -8,7 +8,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import static net.kuba807.kubastfca.kubastfca.MODID;
-import net.dries007.tfc.common.recipes.SimpleItemRecipe;
 
 public class KUBARecipeSerializers {
 

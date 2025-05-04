@@ -1,4 +1,4 @@
-package net.kuba807.kubastfca.fluid;
+package net.kuba807.kubastfca.common.fluid;
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Camera;

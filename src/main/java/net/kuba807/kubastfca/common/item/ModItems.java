@@ -1,14 +1,12 @@
-package net.kuba807.kubastfca.item;
+package net.kuba807.kubastfca.common.item;
 
 
 import net.dries007.tfc.util.Helpers;
-import net.kuba807.kubastfca.block.ModBlocks;
-import net.kuba807.kubastfca.block.crop.Crop;
+import net.kuba807.kubastfca.common.block.ModBlocks;
+import net.kuba807.kubastfca.common.block.crop.Crop;
 
-import net.minecraft.resources.ResourceLocation;
 import net.dries007.tfc.common.items.JarItem;
-import net.dries007.tfc.common.items.TFCItems;
-import net.kuba807.kubastfca.fluid.ModFluids;
+import net.kuba807.kubastfca.common.fluid.ModFluids;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -20,7 +18,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Map;
 
-import static net.dries007.tfc.util.Helpers.identifier;
 import static net.kuba807.kubastfca.kubastfca.MODID;
 
 public class ModItems {

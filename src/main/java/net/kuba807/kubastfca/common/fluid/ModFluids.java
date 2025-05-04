@@ -1,9 +1,8 @@
-package net.kuba807.kubastfca.fluid;
+package net.kuba807.kubastfca.common.fluid;
 
-import net.kuba807.kubastfca.block.ModBlocks;
-import net.kuba807.kubastfca.fluid.ModFluidTypes;
+import net.kuba807.kubastfca.common.block.ModBlocks;
 import net.kuba807.kubastfca.kubastfca;
-import net.kuba807.kubastfca.item.ModItems;
+import net.kuba807.kubastfca.common.item.ModItems;
 import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraftforge.eventbus.api.IEventBus;
