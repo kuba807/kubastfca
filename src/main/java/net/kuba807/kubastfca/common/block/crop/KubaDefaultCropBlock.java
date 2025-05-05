@@ -6,6 +6,8 @@ import java.util.function.Supplier;
 import net.dries007.tfc.common.blocks.crop.DefaultCropBlock;
 import net.kuba807.kubastfca.common.block.ModBlocks;
 import net.kuba807.kubastfca.common.item.ModItems;
+import net.kuba807.kubastfca.util.climate.ClimateRanges;
+
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -14,7 +16,6 @@ import net.dries007.tfc.common.blockentities.FarmlandBlockEntity;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.TFCBlockStateProperties;
 import net.dries007.tfc.util.climate.ClimateRange;
-import net.dries007.tfc.util.climate.ClimateRanges;
 
 
 public abstract class KubaDefaultCropBlock extends DefaultCropBlock
