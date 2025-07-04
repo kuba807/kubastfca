@@ -1,0 +1,19 @@
+{
+  "feature": "kubastfca:crop/wild_crop/tea_patch",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 80
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "tfc:climate",
+      "min_temperature": 0,
+      "max_temperature": 35,
+      "min_rainfall": 100,
+      "max_rainfall": 1000
+    }
+  ]
+}
