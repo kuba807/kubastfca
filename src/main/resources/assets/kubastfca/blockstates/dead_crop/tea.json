@@ -1,10 +1,10 @@
 {
   "variants": {
     "mature=true": {
-      "model": "tfc:block/dead_crop/barley"
+      "model": "kubastfca:block/dead_crop/tea"
     },
     "mature=false": {
-      "model": "tfc:block/dead_crop/cabbage_young"
+      "model": "kubastfca:block/dead_crop/tea_young"
     }
   }
 }

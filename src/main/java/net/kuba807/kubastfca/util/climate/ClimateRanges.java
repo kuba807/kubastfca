@@ -16,9 +16,9 @@ public class ClimateRanges {
         return register("crop/" + crop.getSerializedName());
     });
 
-
+    public ClimateRanges() {}
 
     private static RegisteredDataManager.Entry<ClimateRange> register(String name) {
-        return ClimateRange.MANAGER.register(Helpers.identifier(name.toLowerCase(Locale.ROOT)));
+        return ClimateRange.MANAGER.register(new ResourceLocation("kubastfca", name.toLowerCase(Locale.ROOT)));
     }
 }
