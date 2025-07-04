@@ -59,9 +59,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
     public  static final RegistryObject<Item> RAW_PASTA = ITEMS.register("raw_pasta",
             () -> new Item(new Item.Properties().food(Foods.RAW)));
-    public static void register (IEventBus eventBus){
-        ITEMS.register(eventBus);
-    }
+
 
     //wiadra herbaty, nie pytaj sam niewiem co się tu dzieje, błagam pomóż, siedze tu już kturąś godzine, a jest późno, proszę pomóż.
 
@@ -89,12 +87,25 @@ public class ModItems {
     public  static final RegistryObject<Item> TEA_SACRED_DATURA_BUCKET = ITEMS.register("tea_sacred_datura_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_SACRED_DATURA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
-    public  static final RegistryObject<Item> TEA_POPPY_BUCKET = ITEMS.register("tea_poppy_bucket",
+    public  static final RegistryObject<Item> TEA_POPPY_BUCKET = ITEMS.register("tea_green_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_POPPY, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public  static final RegistryObject<Item> TEA_GREEN_BUCKET = ITEMS.register("green_tea_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_TEA_GREEN, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+
+    //organiczne, nie gnijące, contains special preservatives
+    public  static final RegistryObject<Item> GREEN_TEA_LEAFS = ITEMS.register("green_tea_leafs",
+            () -> new Item(new Item.Properties()));
 
     //rosliny
     public static final Map<Crop, RegistryObject<Item>> CROP_SEEDS = Helpers.mapOfKeys(Crop.class, crop ->
             ITEMS.register("seeds/" + crop.getSerializedName(), () -> new ItemNameBlockItem(ModBlocks.CROPS.get(crop).get(), new Item.Properties())));
+
+    public static void register (IEventBus eventBus){
+        ITEMS.register(eventBus);
+    }
+
+    //organiczne, nie gnijące, contains special preservatives
 
 }

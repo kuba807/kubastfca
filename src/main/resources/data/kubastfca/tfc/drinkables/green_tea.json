@@ -1,0 +1,22 @@
+{
+  "ingredient": "kubastfca:green_tea_fluid",
+  "thirst": 15,
+  "food": {
+    "hunger": 0,
+    "saturation": 0,
+    "fruit": 1.0,
+    "vegetables":1.0
+
+  },
+  "effects": [
+    {
+      "type": "minecraft:regeneration",
+      "duration": 40
+    },
+    {
+      "type": "minecraft:speed",
+      "duration": 1200
+    }
+  ],
+  "may_drink_when_full": true
+}

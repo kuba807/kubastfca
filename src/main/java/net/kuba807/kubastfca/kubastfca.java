@@ -75,6 +75,7 @@ public class kubastfca
             event.accept(ModItems.VEGGIE_WEK_UNSEALED);
             event.accept(ModItems.MIX_WEK);
             event.accept(ModItems.MIX_WEK_UNSEALED);
+            event.accept(ModItems.GREEN_TEA_LEAFS);
 
         }
 }
