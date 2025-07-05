@@ -22,11 +22,15 @@
   "block.kubastfca.fluid.sacred_datura": "herbata z bielunia świętego",
   "fluid_type.kubastfca.poppy": "herbata z maka",
   "block.kubastfca.fluid.poppy": "herbata z maka",
+  "fluid_type.kubastfca.green_tea": "Zielona herbata",
+  "block.kubastfca.fluid.green_tea": "Zielona herbata",
   "item.kubastfca.jar.meat_wek": "mięsny wek",
   "item.kubastfca.jar.meat_wek_unsealed": "mięsny wek",
   "item.kubastfca.jar.veggie_wek": "warzywny wek",
   "item.kubastfca.jar.veggie_wek_unsealed": "warzywny wek",
   "item.kubastfca.jar.mix_wek": "mieszany wek",
   "item.kubastfca.jar.mix_wek_unsealed": "mieszany wek",
+  "item.kubastfca.green_tea_leafs": "liście zielonej herbaty",
+  "item.kubastfca.seeds.tea": "nasiona zielonej herbaty",
   "tfc.jei.dumpling": "gotowanie"
 }

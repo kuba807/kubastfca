@@ -7,6 +7,7 @@ import com.mojang.logging.LogUtils;
 import net.kuba807.kubastfca.common.item.ModItems;
 import net.kuba807.kubastfca.common.block.ModBlocks;
 import net.kuba807.kubastfca.common.recipes.KUBARecipeSerializers;
+import net.kuba807.kubastfca.client.ClientEventHandler;
 
 import net.minecraft.client.Minecraft;
 
@@ -24,6 +25,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -46,6 +48,9 @@ public class kubastfca
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
 
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            ClientEventHandler.init();
+        }
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

@@ -20,6 +20,8 @@
   "block.kubastfca.fluid.labrador_tea": "labrador tea tea",
   "fluid_type.kubastfca.sacred_datura": "sacred datura tea",
   "block.kubastfca.fluid.sacred_datura": "sacred datura tea",
+  "fluid_type.kubastfca.green_tea": "Green tea",
+  "block.kubastfca.fluid.green_tea": "Green tea",
   "fluid_type.kubastfca.poppy": "poppy tea",
   "block.kubastfca.fluid.poppy": "poppy tea",
   "item.kubastfca.jar.meat_wek": "canned meat",
@@ -28,5 +30,7 @@
   "item.kubastfca.jar.veggie_wek_unsealed": "canned veggies",
   "item.kubastfca.jar.mix_wek": "canned stew",
   "item.kubastfca.jar.mix_wek_unsealed": "canned stew",
+  "item.kubastfca.green_tea_leafs": "green tea leafs",
+  "item.kubastfca.seeds.tea": "green tea seeds",
   "tfc.jei.dumpling": "boiling"
 }
