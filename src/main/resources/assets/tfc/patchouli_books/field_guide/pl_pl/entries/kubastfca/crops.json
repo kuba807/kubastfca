@@ -1,0 +1,159 @@
+{
+  "name": "Rośliny",
+  "icon": "kubastfca:green_tea_leafs",
+  "category": "tfc:kubastfca",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "soo, you got bored with boiling grass and want some fancy grass? this entry will help you achieve this the required information for you!"
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "Green_tea",
+      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 80 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Green is a single block crop.Green tea seeds can be planted on farmland and will produce $(thing)Green tea leafs$() and $(thing)Green tea Seeds$() as a product.",
+      "title": "Green tea"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/tea[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/tea[age=1]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/tea[age=2]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/tea[age=3]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/tea[age=4]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/tea[age=5]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/tea[age=6]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/tea[age=7]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+      ]
+    }
+  ]
+}
