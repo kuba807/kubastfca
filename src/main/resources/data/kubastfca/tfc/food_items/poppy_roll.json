@@ -1,0 +1,10 @@
+{
+  "ingredient": {
+    "item": "kubastfca:poppy_roll"
+  },
+  "hunger":5,
+  "saturation":1,
+  "decay_modifier":0.3,
+  "fruit":0.2,
+  "grain":1.4
+}

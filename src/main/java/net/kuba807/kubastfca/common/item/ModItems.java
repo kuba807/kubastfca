@@ -60,6 +60,11 @@ public class ModItems {
     public  static final RegistryObject<Item> RAW_PASTA = ITEMS.register("raw_pasta",
             () -> new Item(new Item.Properties().food(Foods.RAW)));
 
+    //makowiec
+    public  static final RegistryObject<Item> poppy_roll = ITEMS.register("poppy_roll",
+            () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
+    public  static final RegistryObject<Item> RAW_poppy_roll = ITEMS.register("raw_poppy_roll",
+            () -> new Item(new Item.Properties().food(Foods.RAW)));
 
     //wiadra herbaty, nie pytaj sam niewiem co się tu dzieje, błagam pomóż, siedze tu już kturąś godzine, a jest późno, proszę pomóż.
 
