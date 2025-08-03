@@ -2,13 +2,13 @@
   "type": "tfc:pot",
   "ingredients": [
     {
-      "item": "kubastfca:green_tea_leafs"
+      "item": "kubastfca:green_tea_leaves"
     },
     {
-      "item": "kubastfca:green_tea_leafs"
+      "item": "kubastfca:green_tea_leaves"
     },
     {
-      "item": "kubastfca:green_tea_leafs"
+      "item": "kubastfca:green_tea_leaves"
     }
   ],
   "fluid_ingredient": {
