@@ -100,7 +100,9 @@ public class ModItems {
 
 
     //organiczne, nie gnijące, contains special preservatives
-    public  static final RegistryObject<Item> GREEN_TEA_LEAFS = ITEMS.register("green_tea_leafs",
+    public  static final RegistryObject<Item> GREEN_TEA_LEAVES = ITEMS.register("green_tea_leaves",
+            () -> new Item(new Item.Properties()));
+    public  static final RegistryObject<Item> BLACK_TEA_LEAVES = ITEMS.register("black_tea_leaves",
             () -> new Item(new Item.Properties()));
 
     //rosliny

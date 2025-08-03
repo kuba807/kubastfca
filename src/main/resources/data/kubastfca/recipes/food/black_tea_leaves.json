@@ -1,0 +1,12 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "item": "kubastfca:green_tea_leaves"
+    }
+  },
+  "output_item": {
+    "item": "kubastfca:black_tea_leaves"
+  },
+  "duration": 8000
+}
