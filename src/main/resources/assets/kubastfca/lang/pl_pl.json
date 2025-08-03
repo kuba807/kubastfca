@@ -30,7 +30,9 @@
   "item.kubastfca.jar.veggie_wek_unsealed": "warzywny wek",
   "item.kubastfca.jar.mix_wek": "mieszany wek",
   "item.kubastfca.jar.mix_wek_unsealed": "mieszany wek",
-  "item.kubastfca.green_tea_leafs": "liście zielonej herbaty",
+  "item.kubastfca.green_tea_leafs": "listeczki zielonej herbaty",
   "item.kubastfca.seeds.tea": "nasiona zielonej herbaty",
-  "tfc.jei.dumpling": "gotowanie"
+  "tfc.jei.dumpling": "gotowanie",
+  "item.kubastfca.poppy_roll": "makowiec",
+  "item.kubastfca.raw_poppy_roll": "surowy makowiec"
 }

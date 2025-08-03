@@ -12,6 +12,10 @@
     "ingredient": "tfc:salt_water",
     "amount": 100
   },
+  "output": {
+    "item": "kubastfca:cooked_dumpling",
+    "count": 1
+  },
   "duration": 600,
   "temperature": 300
 }

@@ -30,7 +30,9 @@
   "item.kubastfca.jar.veggie_wek_unsealed": "canned veggies",
   "item.kubastfca.jar.mix_wek": "canned stew",
   "item.kubastfca.jar.mix_wek_unsealed": "canned stew",
-  "item.kubastfca.green_tea_leafs": "green tea leafs",
+  "item.kubastfca.green_tea_leafs": "green tea leaves",
   "item.kubastfca.seeds.tea": "green tea seeds",
-  "tfc.jei.dumpling": "boiling"
+  "tfc.jei.dumpling": "boiling",
+  "item.kubastfca.poppy_roll": "poppy roll",
+  "item.kubastfca.raw_poppy_roll": "raw poppy roll"
 }

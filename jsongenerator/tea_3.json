@@ -1,0 +1,1 @@
+{"type": "tfc:pot", "ingredients": [{"item": "tfc:plant/tea"}, {"item": "tfc:plant/tea"}, {"item": "tfc:plant/tea"}], "fluid_ingredient": {"ingredient": "minecraft:water", "amount": 600}, "duration": 2000, "temperature": 600, "fluid_output": {"fluid": "kubastfca:tea_fluid", "amount": 600}}

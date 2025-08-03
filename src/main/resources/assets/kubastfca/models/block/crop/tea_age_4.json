@@ -2,6 +2,6 @@
 
   "parent": "block/crop",
   "textures": {
-    "crop": "kubastfca:block/crop/tea/tea_4"
+    "crop": "kubastfca:block/crop/tea/tea_2"
   }
 }

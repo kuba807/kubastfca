@@ -25,6 +25,7 @@ public enum Crop implements StringRepresentable
 
     // drinks
     TEA(NutrientType.NITROGEN, 8); // Default, 8
+  //  SUNFLOWER(NutrientType.NITROGEN, 8); // Default, 8
 
 
   private static ExtendedProperties doubleCrop()
@@ -75,18 +76,18 @@ public enum Crop implements StringRepresentable
    //     );
    // }
 //
-   Crop(NutrientType k_primaryNutrient, int k_singleBlockStages)
+   Crop(NutrientType primaryNutrient, int singleBlockStages)
    {
-       this(k_primaryNutrient, self -> KubaDefaultCropBlock.create(crop(), k_singleBlockStages, self), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
+       this(primaryNutrient, self -> KubaDefaultCropBlock.create(crop(), singleBlockStages, self), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
    }
 
-    Crop(NutrientType k_primaryNutrient, Function<Crop, Block> k_factory, Function<Crop, Block> k_deadFactory, Function<Crop, Block> k_wildFactory)
+    Crop(NutrientType primaryNutrient, Function<Crop, Block> factory, Function<Crop, Block> deadFactory, Function<Crop, Block> wildFactory)
     {
         this.serializedName = name().toLowerCase(Locale.ROOT);
-        this.primaryNutrient = k_primaryNutrient;
-        this.factory = () -> k_factory.apply(this);
-        this.deadFactory = () -> k_deadFactory.apply(this);
-        this.wildFactory = () -> k_wildFactory.apply(this);
+        this.primaryNutrient = primaryNutrient;
+        this.factory = () -> factory.apply(this);
+        this.deadFactory = () -> deadFactory.apply(this);
+        this.wildFactory = () -> wildFactory.apply(this);
     }
     @Override
     public String getSerializedName()
