@@ -65,6 +65,11 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_TEA_GREEN= FLUIDS.register("flowing_green_tea",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.TEA_GREEN_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_TEA_BLACK =FLUIDS.register("black_tea_fluid",
+            () -> new ForgeFlowingFluid.Source(ModFluids.TEA_BLACK_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_TEA_BLACK= FLUIDS.register("flowing_black_tea",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.TEA_BLACK_PROPERTIES));
+
 
 
 
@@ -126,6 +131,11 @@ public class ModFluids {
             ModFluidTypes.TEA_GREEN, SOURCE_TEA_GREEN, FLOWING_TEA_GREEN)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_GREEN_BLOCK)
             .bucket(ModItems.TEA_GREEN_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties TEA_BLACK_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.TEA_BLACK, SOURCE_TEA_BLACK, FLOWING_TEA_BLACK)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_BLACK_BLOCK)
+            .bucket(ModItems.TEA_BLACK_BUCKET);
 
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);

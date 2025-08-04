@@ -1,0 +1,23 @@
+{
+  "ingredient": "kubastfca:black_tea_fluid",
+  "thirst": 15,
+  "food": {
+    "hunger": 0,
+    "saturation": 0,
+    "fruit": 0.5,
+    "vegetables":0.5
+
+  },
+  "effects": [
+    {
+      "type": "minecraft:haste",
+      "duration": 1200
+    },
+    {
+      "type": "minecraft:speed",
+      "duration": 1200,
+      "amplifier": 1
+    }
+  ],
+  "may_drink_when_full": false
+}

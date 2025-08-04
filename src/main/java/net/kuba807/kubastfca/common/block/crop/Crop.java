@@ -7,10 +7,12 @@ import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.crop.DeadCropBlock;
 import net.dries007.tfc.common.blocks.crop.WildCropBlock;
 import net.dries007.tfc.util.climate.ClimateRange;
+import net.kuba807.kubastfca.common.item.ModItems;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.item.Item;
 
 import java.util.Locale;
 import java.util.function.Function;
@@ -23,7 +25,7 @@ import net.kuba807.kubastfca.util.climate.ClimateRanges;
 public enum Crop implements StringRepresentable
 {
 
-    // drinks
+    // drinksModItems.GREEN_TEA_LEAVES.get()
     TEA(NutrientType.NITROGEN, 8); // Default, 8
   //  SUNFLOWER(NutrientType.NITROGEN, 8); // Default, 8
 
@@ -56,11 +58,11 @@ public enum Crop implements StringRepresentable
   //      this(primaryNutrient, self -> SpreadingCropBlock.create(crop(), spreadingSingleBlockStages, self, fruit), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildSpreadingCropBlock(dead().randomTicks(), fruit));
   //  }
 //
-  //  Crop(NutrientType primaryNutrient, int spreadingSingleBlockStages, Supplier<Supplier<? extends Item>> fruit1, Supplier<Supplier<? extends Item>> fruit2)
-  //  {
-  //      this(primaryNutrient, self -> PickableCropBlock.create(crop(), spreadingSingleBlockStages, self, fruit1, fruit2), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
-  //  }
-//
+ Crop(NutrientType primaryNutrient, int spreadingSingleBlockStages, Supplier<Supplier<? extends Item>> fruit1, Supplier<Supplier<? extends Item>> fruit2)
+ {
+     this(primaryNutrient, self -> Pickable.create(crop(), spreadingSingleBlockStages, self, fruit1, fruit2), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
+ }
+
   //  Crop(NutrientType primaryNutrient, int floodedSingleBlockStages, boolean flooded)
   //  {
   //      this(primaryNutrient, self -> FloodedCropBlock.create(crop(), floodedSingleBlockStages, self), self -> new FloodedDeadCropBlock(dead(), self.getClimateRange()), self -> new FloodedWildCropBlock(dead().randomTicks()));

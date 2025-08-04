@@ -22,6 +22,8 @@
   "block.kubastfca.fluid.sacred_datura": "sacred datura tea",
   "fluid_type.kubastfca.green_tea": "Green tea",
   "block.kubastfca.fluid.green_tea": "Green tea",
+  "fluid_type.kubastfca.black_tea": "Black tea",
+  "block.kubastfca.fluid.black_tea": "Black tea",
   "fluid_type.kubastfca.poppy": "poppy tea",
   "block.kubastfca.fluid.poppy": "poppy tea",
   "item.kubastfca.jar.meat_wek": "canned meat",

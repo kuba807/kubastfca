@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kubastfca:green_tea_leafs",
+          "name": "kubastfca:green_tea_leaves",
           "conditions": [
             {
               "condition": "minecraft:block_state_property",

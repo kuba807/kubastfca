@@ -98,6 +98,8 @@ public class ModItems {
     public  static final RegistryObject<Item> TEA_GREEN_BUCKET = ITEMS.register("green_tea_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_GREEN, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public  static final RegistryObject<Item> TEA_BLACK_BUCKET = ITEMS.register("black_tea_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_TEA_BLACK, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     //organiczne, nie gnijące, contains special preservatives
     public  static final RegistryObject<Item> GREEN_TEA_LEAVES = ITEMS.register("green_tea_leaves",
@@ -113,6 +115,6 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-    //organiczne, nie gnijące, contains special preservatives
+
 
 }
