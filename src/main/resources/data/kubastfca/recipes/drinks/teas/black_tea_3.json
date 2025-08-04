@@ -1,0 +1,24 @@
+{
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "kubastfca:black_tea_leaves"
+    },
+    {
+      "item": "kubastfca:black_tea_leaves"
+    },
+    {
+      "item": "kubastfca:black_tea_leaves"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 600
+  },
+  "duration": 2000,
+  "temperature": 600,
+  "fluid_output": {
+    "fluid": "kubastfca:black_tea_fluid",
+    "amount": 600
+  }
+}

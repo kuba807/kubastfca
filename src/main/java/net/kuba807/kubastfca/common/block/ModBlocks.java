@@ -51,6 +51,9 @@ public class ModBlocks {
 
     public static final RegistryObject<LiquidBlock> TEA_GREEN_BLOCK = BLOCKS.register("tea_green_block",
             () -> new LiquidBlock(ModFluids.SOURCE_TEA_GREEN ,BlockBehaviour.Properties.copy(Blocks.WATER)));
+
+    public static final RegistryObject<LiquidBlock> TEA_BLACK_BLOCK = BLOCKS.register("tea_black_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_TEA_BLACK ,BlockBehaviour.Properties.copy(Blocks.WATER)));
         //uprawy
         public static final Map<Crop, RegistryObject<Block>> CROPS = Helpers.mapOfKeys(Crop.class, crop ->
                 BLOCKS.register("crop/" + crop.getSerializedName(), crop::create));
