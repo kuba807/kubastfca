@@ -3,6 +3,9 @@ package net.kuba807.kubastfca.common.block.crop;
 import java.util.List;
 import java.util.Locale;
 import java.util.function.Supplier;
+
+import net.kuba807.kubastfca.common.block.ModBlocks;
+import net.kuba807.kubastfca.common.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -35,7 +38,8 @@ import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.items.TFCItems;
 import net.dries007.tfc.util.Helpers;
 import net.dries007.tfc.util.climate.ClimateRange;
-import net.dries007.tfc.util.climate.ClimateRanges;
+
+import net.kuba807.kubastfca.util.climate.ClimateRanges;
 
 public abstract class DoubleCropBlock extends KubaCropBlock
 {
@@ -44,7 +48,7 @@ public abstract class DoubleCropBlock extends KubaCropBlock
     public static DoubleCropBlock create(ExtendedProperties properties, int singleStages, int doubleStages, Crop crop)
     {
         final IntegerProperty property = TFCBlockStateProperties.getAgeProperty(singleStages + doubleStages - 1);
-        return new DoubleCropBlock(properties, singleStages - 1, singleStages + doubleStages - 1, TFCBlocks.DEAD_CROPS.get(crop), TFCItems.CROP_SEEDS.get(crop), crop.getPrimaryNutrient(), ClimateRanges.CROPS.get(crop))
+        return new DoubleCropBlock(properties, singleStages - 1, singleStages + doubleStages - 1, ModBlocks.DEAD_CROPS.get(crop), ModItems.CROP_SEEDS.get(crop), crop.getPrimaryNutrient(), ClimateRanges.CROPS.get(crop))
         {
             @Override
             public IntegerProperty getAgeProperty()
