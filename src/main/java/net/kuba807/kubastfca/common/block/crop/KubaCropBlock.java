@@ -3,7 +3,7 @@ package net.kuba807.kubastfca.common.block.crop;
 import java.util.List;
 import java.util.function.Supplier;
 
-import net.dries007.tfc.common.blocks.crop.CropHelpers;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
