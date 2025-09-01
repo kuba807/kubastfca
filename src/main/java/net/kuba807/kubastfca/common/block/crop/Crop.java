@@ -26,8 +26,8 @@ public enum Crop implements StringRepresentable
 {
 
     // drinksModItems.GREEN_TEA_LEAVES.get()
-    TEA(NutrientType.NITROGEN, 8); // Default, 8
-  //  SUNFLOWER(NutrientType.NITROGEN, 8); // Default, 8
+    TEA(NutrientType.NITROGEN, 8), // Default, 8
+    SUNFLOWER(NutrientType.NITROGEN,3,3,false); // Default, 8
 
 
   private static ExtendedProperties doubleCrop()
@@ -69,15 +69,15 @@ public enum Crop implements StringRepresentable
   //      assert flooded;
   //  }
 
-   // Crop(NutrientType primaryNutrient, int doubleBlockBottomStages, int doubleBlockTopStages, boolean requiresStick)
-   // {
-   //     this(primaryNutrient, requiresStick ?
-   //                     self -> ClimbingCropBlock.create(doubleCrop(), doubleBlockBottomStages, doubleBlockTopStages, self) :
-   //                     self -> DoubleCropBlock.create(doubleCrop(), doubleBlockBottomStages, doubleBlockTopStages, self),
-   //             self -> new DeadClimbingCropBlock(dead(), self.getClimateRange()), self -> new WildDoubleCropBlock(dead().randomTicks())
-   //     );
-   // }
-//
+    Crop(NutrientType primaryNutrient, int doubleBlockBottomStages, int doubleBlockTopStages, boolean requiresStick)
+    {
+        this(primaryNutrient,// requiresStick ?
+                        // self -> ClimbingCropBlock.create(doubleCrop(), doubleBlockBottomStages, doubleBlockTopStages, self) :
+                        self -> DoubleCropBlock.create(doubleCrop(), doubleBlockBottomStages, doubleBlockTopStages, self),
+                self -> new DeadClimbingCropBlock(dead(), self.getClimateRange()), self -> new WildDoubleCropBlock(dead().randomTicks())
+        );
+    }
+
    Crop(NutrientType primaryNutrient, int singleBlockStages)
    {
        this(primaryNutrient, self -> KubaDefaultCropBlock.create(crop(), singleBlockStages, self), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
