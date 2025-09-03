@@ -75,7 +75,7 @@ public final class CropHelpers
         final float endTemperature = Climate.getTemperature(level, pos, calendar, Calendars.SERVER.ticksToCalendarTicks(toTick));
         final long tickDelta = toTick - fromTick;
 
-        final KubaICropBlock cropBlock = (KubaICropBlock) state.getBlock();
+        final ICropBlock cropBlock = (ICropBlock) state.getBlock();
         final ClimateRange range = cropBlock.getClimateRange();
         final boolean growing = checkClimate(range, hydration, startTemperature, endTemperature, false);
         final boolean healthy = growing || checkClimate(range, hydration, startTemperature, endTemperature, true);

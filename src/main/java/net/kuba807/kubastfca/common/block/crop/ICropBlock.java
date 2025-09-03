@@ -9,7 +9,7 @@ import net.dries007.tfc.common.blockentities.CropBlockEntity;
 import net.dries007.tfc.common.blockentities.FarmlandBlockEntity;
 import net.dries007.tfc.util.climate.ClimateRange;
 
-public interface KubaICropBlock
+public interface ICropBlock
 {
     void growthTick(Level level, BlockPos pos, BlockState state, CropBlockEntity crop);
 

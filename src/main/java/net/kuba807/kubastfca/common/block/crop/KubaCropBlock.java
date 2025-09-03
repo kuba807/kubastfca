@@ -41,7 +41,7 @@ import net.dries007.tfc.util.calendar.Calendars;
 import net.dries007.tfc.util.climate.ClimateRange;
 
 
-public abstract class KubaCropBlock extends net.minecraft.world.level.block.CropBlock implements HoeOverlayBlock, KubaICropBlock, IForgeBlockExtension, EntityBlockExtension {
+public abstract class KubaCropBlock extends net.minecraft.world.level.block.CropBlock implements HoeOverlayBlock, ICropBlock, IForgeBlockExtension, EntityBlockExtension {
     public static final VoxelShape QUARTER_SHAPE = box(2, 0, 2, 14, 4, 14);
     public static final VoxelShape HALF_SHAPE = box(2, 0, 2, 14, 8, 14);
     public static final VoxelShape FULL_SHAPE = box(2, 0, 2, 14, 16, 14);
