@@ -5,7 +5,7 @@
     {
       "type": "tfc:not_rotten",
       "ingredient": {
-        "item":  "kubastfca:dumpling"
+        "item":  "kubastfca:cooked_dumpling"
       }
     },
     {
