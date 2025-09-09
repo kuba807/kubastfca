@@ -197,6 +197,36 @@ public class ModFluidTypes {
                             .supportsBoating(true)
             ));
 
+    public static final RegistryObject<FluidType> SUNFLOWER_OIL = registerFluidType("sunflower_oil",
+            new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xF0FAE033,
+                    new Vector3f(224f / 255f, 56f / 255f, 208f / 255f),
+                    FluidType.Properties.create().lightLevel(2).viscosity(5).density(15).adjacentPathType(BlockPathTypes.WATER)
+                            .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                            .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+                            .canConvertToSource(true)
+                            .canDrown(true)
+                            .canExtinguish(true)
+                            .canHydrate(false)
+                            .canPushEntity(true)
+                            .canSwim(true)
+                            .supportsBoating(true)
+            ));
+
+    public static final RegistryObject<FluidType> SUNFLOWER_OIL_WATER = registerFluidType("sunflower_oil_water",
+            new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xE0FAE033,
+                    new Vector3f(224f / 255f, 56f / 255f, 208f / 255f),
+                    FluidType.Properties.create().lightLevel(2).viscosity(5).density(15).adjacentPathType(BlockPathTypes.WATER)
+                            .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                            .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+                            .canConvertToSource(true)
+                            .canDrown(true)
+                            .canExtinguish(true)
+                            .canHydrate(false)
+                            .canPushEntity(true)
+                            .canSwim(true)
+                            .supportsBoating(true)
+            ));
+
 
     private static RegistryObject<FluidType> registerFluidType(String name, FluidType fluidType) {
         return FLUID_TYPES.register(name, () -> fluidType);

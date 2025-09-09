@@ -101,11 +101,22 @@ public class ModItems {
     public  static final RegistryObject<Item> TEA_BLACK_BUCKET = ITEMS.register("black_tea_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_BLACK, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public  static final RegistryObject<Item> SUNFLOWER_OIL_BUCKET = ITEMS.register("sunflower_oil_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_SUNFLOWER_OIL, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    public  static final RegistryObject<Item> SUNFLOWER_OIL_WATER_BUCKET = ITEMS.register("sunflower_oil_water_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_SUNFLOWER_OIL_WATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+
     //organiczne, nie gnijące, contains special preservatives
     public  static final RegistryObject<Item> GREEN_TEA_LEAVES = ITEMS.register("green_tea_leaves",
             () -> new Item(new Item.Properties()));
     public  static final RegistryObject<Item> BLACK_TEA_LEAVES = ITEMS.register("black_tea_leaves",
             () -> new Item(new Item.Properties()));
+    //organiczne, gnijące
+    public  static final RegistryObject<Item> SUNFLOWER_SEEDS = ITEMS.register("sunflower_seeds",
+            () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
+    public  static final RegistryObject<Item> SUNFLOWER_pulp = ITEMS.register("sunflower_pulp",
+            () -> new Item(new Item.Properties().food(Foods.DEFAULT)));
 
     //rosliny
     public static final Map<Crop, RegistryObject<Item>> CROP_SEEDS = Helpers.mapOfKeys(Crop.class, crop ->

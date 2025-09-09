@@ -70,6 +70,15 @@ public class ModFluids {
     public static final RegistryObject<FlowingFluid> FLOWING_TEA_BLACK= FLUIDS.register("flowing_black_tea",
             () -> new ForgeFlowingFluid.Flowing(ModFluids.TEA_BLACK_PROPERTIES));
 
+    public static final RegistryObject<FlowingFluid> SOURCE_SUNFLOWER_OIL =FLUIDS.register("sunflower_oil",
+            () -> new ForgeFlowingFluid.Source(ModFluids.SUNFLOWER_OIL_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_SUNFLOWER_OIL= FLUIDS.register("flowing_sunflower_oil",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.SUNFLOWER_OIL_PROPERTIES));
+
+    public static final RegistryObject<FlowingFluid> SOURCE_SUNFLOWER_OIL_WATER =FLUIDS.register("sunflower_oil_water",
+            () -> new ForgeFlowingFluid.Source(ModFluids.SUNFLOWER_OIL_WATER_PROPERTIES));
+    public static final RegistryObject<FlowingFluid> FLOWING_SUNFLOWER_OIL_WATER= FLUIDS.register("flowing_sunflower_oil_water",
+            () -> new ForgeFlowingFluid.Flowing(ModFluids.SUNFLOWER_OIL_WATER_PROPERTIES));
 
 
 
@@ -137,6 +146,15 @@ public class ModFluids {
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_BLACK_BLOCK)
             .bucket(ModItems.TEA_BLACK_BUCKET);
 
+    public static final ForgeFlowingFluid.Properties SUNFLOWER_OIL_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.SUNFLOWER_OIL, SOURCE_SUNFLOWER_OIL, FLOWING_SUNFLOWER_OIL)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.SUNFLOWER_OIL_BLOCK)
+            .bucket(ModItems.SUNFLOWER_OIL_BUCKET);
+
+    public static final ForgeFlowingFluid.Properties SUNFLOWER_OIL_WATER_PROPERTIES = new ForgeFlowingFluid.Properties(
+            ModFluidTypes.SUNFLOWER_OIL_WATER, SOURCE_SUNFLOWER_OIL_WATER, FLOWING_SUNFLOWER_OIL_WATER)
+            .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.SUNFLOWER_OIL_WATER_BLOCK)
+            .bucket(ModItems.SUNFLOWER_OIL_WATER_BUCKET);
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);
     }

@@ -1,0 +1,10 @@
+{
+  "type": "tfc:quern",
+  "ingredient": {
+    "item": "kubastfca:sunflower_seeds"
+  },
+  "result": {
+    "item": "kubastfca:sunflower_pulp",
+    "count": 2
+  }
+}

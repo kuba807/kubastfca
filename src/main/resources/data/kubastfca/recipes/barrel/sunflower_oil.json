@@ -1,0 +1,19 @@
+{
+  "type": "tfc:barrel_instant",
+  "input_item": {
+    "ingredient": {
+      "item": "tfc:jute_net"
+    }
+  },
+  "input_fluid": {
+    "ingredient": "kubastfca:sunflower_oil_water",
+    "amount": 250
+  },
+  "output_item": {
+    "item": "tfc:dirty_jute_net"
+  },
+  "output_fluid": {
+    "fluid": "kubastfca:sunflower_oil",
+    "amount": 50
+  }
+}

@@ -37,5 +37,12 @@
   "item.kubastfca.seeds.tea": "nasiona zielonej herbaty",
   "tfc.jei.dumpling": "gotowanie",
   "item.kubastfca.poppy_roll": "makowiec",
-  "item.kubastfca.raw_poppy_roll": "surowy makowiec"
+  "item.kubastfca.raw_poppy_roll": "surowy makowiec",
+  "item.kubastfca.sunflower_seeds": "pestki słonecznika",
+  "item.kubastfca.seeds.sunflower": "nasiona słonecznika",
+  "item.kubastfca.sunflower_pulp": "masa słonecznikowa",
+  "fluid_type.kubastfca.sunflower_oil": "olej słonecznikowy",
+  "block.kubastfca.fluid.sunflower_oil": "olej słonecznikowy",
+  "fluid_type.kubastfca.sunflower_oil_water": "roztwór oleju słonecznikowego z wodą",
+  "block.kubastfca.fluid.sunflower_oil_water": "oztwór oleju słonecznikowego z wodą"
 }

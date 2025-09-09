@@ -3,6 +3,7 @@ package net.kuba807.kubastfca;
 import net.kuba807.kubastfca.common.block.crop.Crop;
 import net.kuba807.kubastfca.common.fluid.ModFluidTypes;
 import net.kuba807.kubastfca.common.fluid.ModFluids;
+import net.kuba807.kubastfca.world.feature.kubafeatures;
 import com.mojang.logging.LogUtils;
 import net.kuba807.kubastfca.common.item.ModItems;
 import net.kuba807.kubastfca.common.block.ModBlocks;
@@ -47,7 +48,7 @@ public class kubastfca
         //fluid
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
-
+        kubafeatures.FEATURES.register(modEventBus);
         if (FMLEnvironment.dist == Dist.CLIENT) {
             ClientEventHandler.init();
         }
@@ -56,7 +57,6 @@ public class kubastfca
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
-
         KUBARecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
     }
 
@@ -109,8 +109,8 @@ public class kubastfca
                 ItemBlockRenderTypes.setRenderLayer(ModBlocks.WILD_CROPS.get(crop).get(), RenderType.cutout());
             }
             // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            LOGGER.info("hello user, do not be afraid to look into the log file :)");
+            //LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
     }
 }

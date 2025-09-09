@@ -1,0 +1,8 @@
+{
+  "fluid": "kubastfca:sunflower_oil",
+  "burn_rate": 8000,
+  "valid_lamps": {
+    "type": "tfc:tag",
+    "tag": "tfc:lamps"
+  }
+}

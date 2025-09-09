@@ -1,0 +1,11 @@
+{
+  "ingredient": {
+    "item": "kubastfca:sunflower_pulp"
+  },
+  "hunger":4,
+  "decay_modifier":2,
+  "saturation":2,
+  "grain": 0.4,
+  "protein": 0.6
+
+}

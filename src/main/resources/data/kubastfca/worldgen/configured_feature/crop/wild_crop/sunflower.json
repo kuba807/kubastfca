@@ -1,0 +1,7 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "kubastfca:tall_wild_crop",
+  "config": {
+    "block": "kubastfca:wild_crop/sunflower"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "tfc:advanced_shapeless_crafting",
+    "ingredients": [
+      {
+      "type": "tfc:not_rotten",
+      "ingredient": {
+        "item": "kubastfca:sunflower_seeds"
+      }
+      }
+    ],
+  "result": {
+    "stack": {
+      "item": "kubastfca:sunflower_pulp"
+    },
+    "modifiers": [
+      { "type": "tfc:copy_food" }
+    ]
+  }
+}

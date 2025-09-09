@@ -1,0 +1,31 @@
+{
+  "__comment__": "This file was automatically created by mcresources",
+  "type": "tfc:pot",
+  "ingredients": [
+    {
+      "item": "kubastfca:sunflower_pulp"
+    },
+    {
+      "item": "kubastfca:sunflower_pulp"
+    },
+    {
+      "item": "kubastfca:sunflower_pulp"
+    },
+    {
+      "item": "kubastfca:sunflower_pulp"
+    },
+    {
+      "item": "kubastfca:sunflower_pulp"
+    }
+  ],
+  "fluid_ingredient": {
+    "ingredient": "minecraft:water",
+    "amount": 1000
+  },
+  "duration": 2000,
+  "temperature": 300,
+  "fluid_output": {
+    "fluid": "kubastfca:sunflower_oil_water",
+    "amount": 1000
+  }
+}

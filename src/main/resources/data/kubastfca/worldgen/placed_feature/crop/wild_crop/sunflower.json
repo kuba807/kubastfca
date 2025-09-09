@@ -1,0 +1,26 @@
+{
+  "feature": "kubastfca:crop/wild_crop/sunflower",
+  "placement": [
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "block_predicate_filter",
+      "predicate": {
+        "type": "tfc:replaceable"
+      }
+    },
+    {
+      "type": "block_predicate_filter",
+      "predicate": {
+        "type": "would_survive",
+        "state": {
+          "Name": "kubastfca:wild_crop/sunflower",
+          "Properties": {
+          }
+        }
+      }
+    }
+  ]
+}

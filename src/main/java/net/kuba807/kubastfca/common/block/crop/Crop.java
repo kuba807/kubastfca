@@ -6,6 +6,8 @@ import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.crop.DeadCropBlock;
 import net.dries007.tfc.common.blocks.crop.WildCropBlock;
+import net.dries007.tfc.common.items.Food;
+import net.dries007.tfc.common.items.TFCItems;
 import net.dries007.tfc.util.climate.ClimateRange;
 import net.kuba807.kubastfca.common.item.ModItems;
 import net.minecraft.util.StringRepresentable;
@@ -13,6 +15,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.item.Item;
+import net.minecraft.core.registries.Registries;
 
 import java.util.Locale;
 import java.util.function.Function;
@@ -26,8 +29,8 @@ public enum Crop implements StringRepresentable
 {
 
     // drinksModItems.GREEN_TEA_LEAVES.get()
-    TEA(NutrientType.NITROGEN, 8), // Default, 8
-    SUNFLOWER(NutrientType.NITROGEN,3,3,false); // Default, 8
+    TEA(NutrientType.NITROGEN, 8,() -> ModItems.GREEN_TEA_LEAVES), // Default, 8
+    SUNFLOWER(NutrientType.NITROGEN,1,5,false); // Default, 8
 
 
   private static ExtendedProperties doubleCrop()
@@ -58,9 +61,9 @@ public enum Crop implements StringRepresentable
   //      this(primaryNutrient, self -> SpreadingCropBlock.create(crop(), spreadingSingleBlockStages, self, fruit), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildSpreadingCropBlock(dead().randomTicks(), fruit));
   //  }
 //
- Crop(NutrientType primaryNutrient, int spreadingSingleBlockStages, Supplier<Supplier<? extends Item>> fruit1, Supplier<Supplier<? extends Item>> fruit2)
+ Crop(NutrientType primaryNutrient, int spreadingSingleBlockStages, Supplier<Supplier<? extends Item>> fruit1)
  {
-     this(primaryNutrient, self -> Pickable.create(crop(), spreadingSingleBlockStages, self, fruit1, fruit2), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
+     this(primaryNutrient, self -> Pickable.create(crop(), spreadingSingleBlockStages, self, fruit1), self -> new DeadCropBlock(dead(), self.getClimateRange()), self -> new WildCropBlock(dead().randomTicks()));
  }
 
   //  Crop(NutrientType primaryNutrient, int floodedSingleBlockStages, boolean flooded)

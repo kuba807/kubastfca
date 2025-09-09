@@ -37,5 +37,12 @@
   "item.kubastfca.seeds.tea": "green tea seeds",
   "tfc.jei.dumpling": "boiling",
   "item.kubastfca.poppy_roll": "poppy roll",
-  "item.kubastfca.raw_poppy_roll": "raw poppy roll"
+  "item.kubastfca.raw_poppy_roll": "raw poppy roll",
+  "item.kubastfca.sunflower_seeds": "sunflower seeds",
+  "item.kubastfca.seeds.sunflower": "sprouting sunflower seeds",
+  "item.kubastfca.sunflower_pulp": "sunflower pulp",
+  "fluid_type.kubastfca.sunflower_oil": "sunflower oil",
+  "block.kubastfca.fluid.sunflower_oil": "sunflower oil",
+  "fluid_type.kubastfca.sunflower_oil_water": "sunflower oil water",
+  "block.kubastfca.fluid.sunflower_oil_water": "sunflower oil water"
 }

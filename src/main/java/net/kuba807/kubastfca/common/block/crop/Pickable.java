@@ -1,6 +1,11 @@
 package net.kuba807.kubastfca.common.block.crop;
 
 import java.util.function.Supplier;
+
+import net.kuba807.kubastfca.common.block.ModBlocks;
+import net.kuba807.kubastfca.common.item.ModItems;
+import net.kuba807.kubastfca.util.climate.ClimateRanges;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
@@ -24,14 +29,14 @@ import net.dries007.tfc.common.blocks.TFCBlockStateProperties;
 import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.items.TFCItems;
 import net.dries007.tfc.util.climate.ClimateRange;
-import net.dries007.tfc.util.climate.ClimateRanges;
+
 
 public abstract class Pickable extends KubaDefaultCropBlock
 {
-    public static Pickable create(ExtendedProperties properties, int stages, Crop crop, @Nullable Supplier<Supplier<? extends Item>> fruit, Supplier<Supplier<? extends Item>> matureFruit)
+    public static Pickable create(ExtendedProperties properties, int stages, Crop crop, @Nullable Supplier<Supplier<? extends Item>> fruit)
     {
         final IntegerProperty property = TFCBlockStateProperties.getAgeProperty(stages - 1);
-        return new Pickable(properties, stages - 1, TFCBlocks.DEAD_CROPS.get(crop), TFCItems.CROP_SEEDS.get(crop), crop.getPrimaryNutrient(), ClimateRanges.CROPS.get(crop), fruit, matureFruit)
+        return new Pickable(properties, stages - 1, ModBlocks.DEAD_CROPS.get(crop), ModItems.CROP_SEEDS.get(crop), crop.getPrimaryNutrient(), ClimateRanges.CROPS.get(crop), fruit, fruit)
         {
             @Override
             public IntegerProperty getAgeProperty()
@@ -75,15 +80,16 @@ public abstract class Pickable extends KubaDefaultCropBlock
             final float yield = crop.getYield();
             final int age = state.getValue(getAgeProperty());
             final RandomSource random = level.getRandom();
-            if (age == maxAge - 1 && getFirstFruit() != null)
-            {
-                crop.setGrowth(Mth.nextFloat(random, 0.4f, 0.5f));
-                crop.setYield(0f);
-                postGrowthTick(level, pos, state, crop);
-                ItemHandlerHelper.giveItemToPlayer(player, yieldItemStack(getFirstFruit(), yield, random));
-                return InteractionResult.sidedSuccess(level.isClientSide);
-            }
-            else if (age == maxAge)
+            //if (age == maxAge - 1 && getFirstFruit() != null)
+            //{
+            //    crop.setGrowth(Mth.nextFloat(random, 0.4f, 0.5f));
+            //    crop.setYield(0f);
+            //    postGrowthTick(level, pos, state, crop);
+            //    ItemHandlerHelper.giveItemToPlayer(player, yieldItemStack(getFirstFruit(), yield, random));
+            //    return InteractionResult.sidedSuccess(level.isClientSide);
+            //}
+            //else
+                if (age == maxAge)
             {
                 crop.setGrowth(Mth.nextFloat(random, 0.5f, 0.6f));
                 crop.setYield(0f);
