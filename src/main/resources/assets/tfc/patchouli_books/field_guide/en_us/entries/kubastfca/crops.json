@@ -1,5 +1,5 @@
 {
-  "name": "Crops",
+  "name": "Uprawa",
   "icon": "kubastfca:green_tea_leafs",
   "category": "tfc:kubastfca",
   "pages": [
@@ -9,10 +9,14 @@
     },
     {
       "type": "patchouli:text",
-      "anchor": "Green_tea",
-      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 80 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Green is a single block crop.Green tea seeds can be planted on farmland and will produce $(thing)Green tea leafs$() and $(thing)Green tea Seeds$() as a product.The wild version can be found in hot amd humid regions(18-35C, and minimum 100 humidity)",
-      "title": "Green tea"
+      "text": ""
+    },{
+      "type": "patchouli:text",
+      "anchor": "Tea",
+      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 16 - 40 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 80 - 100 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Tea is a single block crop.Tea seeds can be planted on farmland and will produce $(thing)Green tea leafs$() and $(thing)tea Seeds$() as a product.The wild version can be found in hot amd humid regions(18-35C, and minimum 100 humidity)",
+      "title": "Tea"
     },
+
     {
       "type": "tfc:multimultiblock",
       "text": "",
@@ -153,6 +157,132 @@
             "Y": "tfc:farmland/loam"
           }
         }
+
+      ]
+    },
+    {
+      "type": "patchouli:text",
+      "anchor": "sunflower",
+      "text": "$(bold)$(l:the_world/climate#temperature)Temperature$(): 2 - 26 °C$(br)$(bold)$(l:mechanics/hydration)Hydration$(): 30 - 60 %$(br)$(bold)Nutrient$(): Nitrogen$(br2)Sunflower is double block crop.Sunflower seeds can be planted on farmland and will produce $(thing)Sunflower seeds$() and $(thing)Sunflower sprouting seeds$() as a product.The wild version can be found in temperate amd not humid regions(0-12C, minimum 100 humidity and maximum 300 humidity)",
+      "title": "Sunflower"
+    },
+    {
+      "type": "tfc:multimultiblock",
+      "text": "",
+      "multiblocks": [
+        {
+          "pattern": [
+            [
+              "X"
+            ],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "X": "kubastfca:crop/sunflower[age=0]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "A"
+            ],
+            ["B"],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "A": "kubastfca:crop/sunflower[age=1,part=top]",
+            "B": "kubastfca:crop/sunflower[age=1,part=bottom]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "A"
+            ],
+            ["B"],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "A": "kubastfca:crop/sunflower[age=2,part=top]",
+            "B": "kubastfca:crop/sunflower[age=2,part=bottom]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "A"
+            ],
+            ["B"],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "A": "kubastfca:crop/sunflower[age=3,part=top]",
+            "B": "kubastfca:crop/sunflower[age=3,part=bottom]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "A"
+            ],
+            ["B"],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "A": "kubastfca:crop/sunflower[age=4,part=top]",
+            "B": "kubastfca:crop/sunflower[age=4,part=bottom]",
+            "Y": "tfc:farmland/loam"
+          }
+        },
+        {
+          "pattern": [
+            [
+              "A"
+            ],
+            ["B"],
+            [
+              "Y"
+            ],
+            [
+              "0"
+            ]
+          ],
+          "mapping": {
+            "A": "kubastfca:crop/sunflower[age=5,part=top]",
+            "B": "kubastfca:crop/sunflower[age=5,part=bottom]",
+            "Y": "tfc:farmland/loam"
+          }
+        }
+
       ]
     }
   ]
