@@ -145,7 +145,7 @@ dependencies {
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
     implementation(fg.deobf("curse.maven:tfc-302973:${tfcVersion}"))
-   // implementation(fg.deobf("curse.maven:firmalife-453394:${firmalifeVersion}"))
+   //implementation(fg.deobf("curse.maven:firmalife-453394:${firmalifeVersion}"))
 
     fg.deobf("curse.maven:patchouli-306770:${patchouli_version}")
     implementation fg.deobf("curse.maven:patchouli-306770:${patchouli_version}")

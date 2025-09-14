@@ -92,7 +92,7 @@ public class ModItems {
     public  static final RegistryObject<Item> TEA_SACRED_DATURA_BUCKET = ITEMS.register("tea_sacred_datura_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_SACRED_DATURA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
-    public  static final RegistryObject<Item> TEA_POPPY_BUCKET = ITEMS.register("tea_green_bucket",
+    public  static final RegistryObject<Item> TEA_POPPY_BUCKET = ITEMS.register("poppy_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_POPPY, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public  static final RegistryObject<Item> TEA_GREEN_BUCKET = ITEMS.register("green_tea_bucket",

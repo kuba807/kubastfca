@@ -44,5 +44,16 @@
   "fluid_type.kubastfca.sunflower_oil": "sunflower oil",
   "block.kubastfca.fluid.sunflower_oil": "sunflower oil",
   "fluid_type.kubastfca.sunflower_oil_water": "sunflower oil water",
-  "block.kubastfca.fluid.sunflower_oil_water": "sunflower oil water"
+  "block.kubastfca.fluid.sunflower_oil_water": "sunflower oil water",
+  "item.kubastfca.green_tea_bucket": "green tea bucket",
+  "item.kubastfca.golden_rod_bucket": "golden rod tea bucket",
+  "item.kubastfca.blood_lily_bucket": "blood lily tea bucket",
+  "item.kubastfca.tea_dandelion_bucket": "dandelio tea bucket",
+  "item.kubastfca.tea_lilac_bucket": "lilac tea bucket",
+  "item.kubastfca.tea_snapdragon_bucket": "snapdragon tea bucket",
+  "item.kubastfca.tea_hibiscus_bucket": "hibiscus tea bucket",
+  "item.kubastfca.tea_labrador_tea_bucket": "labrador tea bucket",
+  "item.kubastfca.tea_sacred_datura_bucket": "sacred datura tea bucket",
+  "item.kubastfca.poppy_bucket": "poppy tea bucket",
+  "item.kubastfca.black_tea_bucket": "black tea bucket"
 }

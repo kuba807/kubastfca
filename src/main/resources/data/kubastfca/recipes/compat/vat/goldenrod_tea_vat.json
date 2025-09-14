@@ -1,0 +1,1 @@
+{"type": "firmalife:vat", "input_item": {"ingredient": {"item": "tfc:plant/goldenrod"}}, "input_fluid": {"ingredient": "minecraft:water", "amount": 200}, "output_fluid": {"fluid": "kubastfca:tea_goldenrod_fluid", "amount": 200}}

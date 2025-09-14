@@ -6,8 +6,8 @@
   "item.kubastfca.raw_pasta": "surowy makaron",
   "fluid_type.kubastfca.golden_rod": "herbata z nawłoci",
   "block.kubastfca.fluid.golden_rod": "herbata z nawłoci",
-  "fluid_type.kubastfca.blood_lily": "herbata z krawej lili",
-  "block.kubastfca.fluid.blood_lily": "herbata z krawej lili",
+  "fluid_type.kubastfca.blood_lily": "herbata z krawej lilii",
+  "block.kubastfca.fluid.blood_lily": "herbata z krawej lilii",
   "fluid_type.kubastfca.dandelion": "herbata z żąkila",
   "block.kubastfca.fluid.dandelion": "herbata z żąkila",
   "fluid_type.kubastfca.lilac": "herbata z kwiata bzu",
@@ -44,5 +44,16 @@
   "fluid_type.kubastfca.sunflower_oil": "olej słonecznikowy",
   "block.kubastfca.fluid.sunflower_oil": "olej słonecznikowy",
   "fluid_type.kubastfca.sunflower_oil_water": "roztwór oleju słonecznikowego z wodą",
-  "block.kubastfca.fluid.sunflower_oil_water": "oztwór oleju słonecznikowego z wodą"
+  "block.kubastfca.fluid.sunflower_oil_water": "oztwór oleju słonecznikowego z wodą",
+  "item.kubastfca.green_tea_bucket": "wiadro zielone herbaty",
+  "item.kubastfca.golden_rod_bucket": "wiadro herbaty z nawłoci",
+  "item.kubastfca.blood_lily_bucket": "wiadro herbaty z krwaweh lilii",
+  "item.kubastfca.tea_dandelion_bucket": "wiadro herbaty z żąkila",
+  "item.kubastfca.tea_lilac_bucket": "wiadro herbaty z kwatu bzu",
+  "item.kubastfca.tea_snapdragon_bucket": "wiadro herbaty z wyżliny",
+  "item.kubastfca.tea_hibiscus_bucket": "wiadro herbaty z hibiskusa",
+  "item.kubastfca.tea_labrador_tea_bucket": "wiadro herbaty z różanecznika",
+  "item.kubastfca.tea_sacred_datura_bucket": "wiadro herbaty z  bielunia świętego",
+  "item.kubastfca.poppy_bucket": "wiadro herbaty z maka",
+  "item.kubastfca.black_tea_bucket": "wiadro czarnej herbaty"
 }

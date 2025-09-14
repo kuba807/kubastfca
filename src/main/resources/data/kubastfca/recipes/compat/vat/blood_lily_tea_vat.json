@@ -1,0 +1,1 @@
+{"type": "firmalife:vat", "input_item": {"ingredient": {"item": "tfc:plant/blood_lily"}}, "input_fluid": {"ingredient": "minecraft:water", "amount": 200}, "output_fluid": {"fluid": "kubastfca:tea_blood_lily_fluid", "amount": 200}}

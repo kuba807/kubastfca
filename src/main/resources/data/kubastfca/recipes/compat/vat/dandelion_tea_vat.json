@@ -1,0 +1,11 @@
+{"type": "firmalife:vat",
+  "input_item": {
+    "ingredient":
+  {"item": "tfc:plant/dandelion"}
+  },
+  "input_fluid":
+  {"ingredient": "minecraft:water",
+    "amount": 200},
+  "output_fluid":
+  {"fluid": "kubastfca:tea_dandelion_fluid",
+    "amount": 200}}
