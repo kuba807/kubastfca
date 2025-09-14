@@ -68,16 +68,16 @@ public class ModItems {
 
     //wiadra herbaty, nie pytaj sam niewiem co się tu dzieje, błagam pomóż, siedze tu już kturąś godzine, a jest późno, proszę pomóż.
 
-    public  static final RegistryObject<Item> tea_goldenrod_bucket = ITEMS.register("tea_goldenrod_bucket",
+    public  static final RegistryObject<Item> TEA_GOLDENROD_BUCKET = ITEMS.register("tea_goldenrod_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_goldenrod, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
-    public  static final RegistryObject<Item> tea_blood_lily_bucket = ITEMS.register("blood_lily_bucket",
+    public  static final RegistryObject<Item> TEA_BLOOD_LILY_BUCKET = ITEMS.register("blood_lily_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_blood_lily, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
-    public  static final RegistryObject<Item> tea_dandelion_bucket = ITEMS.register("tea_dandelion_bucket",
+    public  static final RegistryObject<Item> TEA_DANDELION_BUCKET = ITEMS.register("tea_dandelion_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_dandelion, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
-    public  static final RegistryObject<Item> tea_lilac_bucket = ITEMS.register("tea_lilac_bucket",
+    public  static final RegistryObject<Item> TEA_LILAC_BUCKET = ITEMS.register("tea_lilac_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_lilac, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public  static final RegistryObject<Item> TEA_SNAPDRAGON_BUCKET = ITEMS.register("tea_snapdragon_bucket",
@@ -92,7 +92,7 @@ public class ModItems {
     public  static final RegistryObject<Item> TEA_SACRED_DATURA_BUCKET = ITEMS.register("tea_sacred_datura_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_SACRED_DATURA, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
-    public  static final RegistryObject<Item> TEA_POPPY_BUCKET = ITEMS.register("poppy_bucket",
+    public  static final RegistryObject<Item> TEA_POPPY_BUCKET = ITEMS.register("tea_poppy_bucket",
             () -> new BucketItem(ModFluids.SOURCE_TEA_POPPY, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
     public  static final RegistryObject<Item> TEA_GREEN_BUCKET = ITEMS.register("green_tea_bucket",

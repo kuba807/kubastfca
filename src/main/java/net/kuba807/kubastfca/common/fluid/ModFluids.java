@@ -94,22 +94,22 @@ public class ModFluids {
     public static final ForgeFlowingFluid.Properties golden_rod_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.golden_rod, SOURCE_TEA_goldenrod, FLOWING_TEA_goldenrod)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_golden_rod_BLOCK)
-            .bucket(ModItems.tea_goldenrod_bucket);
+            .bucket(ModItems.TEA_GOLDENROD_BUCKET);
 
     public static final ForgeFlowingFluid.Properties blood_lily_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.blood_lily, SOURCE_TEA_blood_lily, FLOWING_TEA_blood_lily)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_blood_lily_BLOCK)
-            .bucket(ModItems.tea_blood_lily_bucket);
+            .bucket(ModItems.TEA_BLOOD_LILY_BUCKET);
 
     public static final ForgeFlowingFluid.Properties dandelion_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.dandelion, SOURCE_TEA_dandelion, FLOWING_TEA_dandelion)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_dandelion_BLOCK)
-            .bucket(ModItems.tea_dandelion_bucket);
+            .bucket(ModItems.TEA_DANDELION_BUCKET);
 
     public static final ForgeFlowingFluid.Properties lilac_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.lilac, SOURCE_TEA_lilac, FLOWING_TEA_lilac)
             .slopeFindDistance(2).levelDecreasePerBlock(2).block(ModBlocks.TEA_lilac_BLOCK)
-            .bucket(ModItems.tea_lilac_bucket);
+            .bucket(ModItems.TEA_LILAC_BUCKET);
 
     public static final ForgeFlowingFluid.Properties SNAPDRAGON_PROPERTIES = new ForgeFlowingFluid.Properties(
             ModFluidTypes.SNAPDRAGON, SOURCE_TEA_SNAPDRAGON, FLOWING_TEA_SNAPDRAGON)

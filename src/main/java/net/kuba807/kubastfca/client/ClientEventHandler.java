@@ -36,10 +36,10 @@ public class ClientEventHandler {
 
     public static void registerColorHandlerItems(RegisterColorHandlersEvent.Item event) {
         final ItemColor grassColor = (stack, tintIndex) -> TFCColors.getGrassColor(null, tintIndex);
-        event.register(new ContainedFluidModel.Colors(), ModItems.tea_blood_lily_bucket.get());
-        event.register(new ContainedFluidModel.Colors(), ModItems.tea_goldenrod_bucket.get());
-        event.register(new ContainedFluidModel.Colors(), ModItems.tea_lilac_bucket.get());
-        event.register(new ContainedFluidModel.Colors(), ModItems.tea_dandelion_bucket.get());
+        event.register(new ContainedFluidModel.Colors(), ModItems.TEA_BLOOD_LILY_BUCKET.get());
+        event.register(new ContainedFluidModel.Colors(), ModItems.TEA_GOLDENROD_BUCKET.get());
+        event.register(new ContainedFluidModel.Colors(), ModItems.TEA_LILAC_BUCKET.get());
+        event.register(new ContainedFluidModel.Colors(), ModItems.TEA_DANDELION_BUCKET.get());
         event.register(new ContainedFluidModel.Colors(),ModItems.TEA_SNAPDRAGON_BUCKET.get());
         event.register(new ContainedFluidModel.Colors(), ModItems.TEA_HIBISCUS_BUCKET.get());
         event.register(new ContainedFluidModel.Colors(), ModItems.TEA_LABDRADOR_TEA_BUCKET.get());
@@ -47,7 +47,6 @@ public class ClientEventHandler {
         event.register(new ContainedFluidModel.Colors(), ModItems.TEA_GREEN_BUCKET.get());
         event.register(new ContainedFluidModel.Colors(), ModItems.TEA_BLACK_BUCKET.get());
         event.register(new ContainedFluidModel.Colors(), ModItems.TEA_POPPY_BUCKET.get());
-       // event.register(new ContainedFluidModel.Colors(), ModItems.black_tea_bucket.get());
         event.register(new ContainedFluidModel.Colors(), ModItems.SUNFLOWER_OIL_BUCKET.get());
         event.register(new ContainedFluidModel.Colors(), ModItems.SUNFLOWER_OIL_WATER_BUCKET.get());
 
